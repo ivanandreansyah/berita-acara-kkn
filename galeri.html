@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeri Kegiatan KKN Desa Papasan - Dokumentasi program kerja, kegiatan sosial, dan keseharian tim KKN.">
+    <title>Galeri KKN - Desa Papasan, Kec. Bangsri, Kab. Jepara</title>
+    <link rel="icon" type="image/png" href="img/hero-banner.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="loading-logo"><i class="fas fa-users"></i></div>
+        <div class="loading-text">KKN Desa Papasan</div>
+        <div class="loading-bar"><div class="loading-bar-inner"></div></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-main fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div style="width:45px;height:45px;background:linear-gradient(135deg,var(--primary),var(--accent));border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:20px;"><i class="fas fa-users"></i></div>
+                <div class="brand-text"><span class="brand-name">KKN Desa Papasan</span><span class="brand-sub">Kec. Bangsri, Kab. Jepara</span></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><i class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#program">Program</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#tim">Tim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container position-relative">
+            <h1 data-aos="fade-up">Galeri Kegiatan KKN</h1>
+            <div class="breadcrumb-custom" data-aos="fade-up" data-aos-delay="100">
+                <a href="index.html">Beranda</a><span class="separator">/</span><span class="current">Galeri</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Dokumentasi</span>
+                <h2>Galeri Tim KKN</h2>
+                <p>Kumpulan dokumentasi pelaksanaan program kerja, kegiatan sosial, dan kebersamaan tim KKN di Desa Papasan.</p>
+                <div class="header-line"></div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="semua">Semua</button>
+                <button class="filter-btn" data-filter="kegiatan">Program Kerja</button>
+                <button class="filter-btn" data-filter="pembangunan">Sosial Warga</button>
+                <button class="filter-btn" data-filter="budaya">Edukasi & UMKM</button>
+                <button class="filter-btn" data-filter="alam">Keseharian</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" data-aos="fade-up">
+                <div class="gallery-item gallery-filter-item" data-category="kegiatan">
+                    <a href="img/penerjunan.jpeg" data-fancybox="galeri-full" data-caption="Penerjunan Mahasiswa KKN UNISNU di Desa Papasan">
+                        <img src="img/penerjunan.jpeg" alt="Penerjunan KKN">
+                        <div class="gallery-overlay">
+                            <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                            <span class="gallery-title">Penerjunan KKN</span>
+                            <span class="gallery-cat">Program Kerja</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item gallery-filter-item" data-category="alam">
+                    <a href="img/hero-banner.png" data-fancybox="galeri-full" data-caption="Pelepasan dan Penerimaan Tim KKN di Balai Desa">
+                        <img src="img/hero-banner.png" alt="Penerimaan Tim KKN">
+                        <div class="gallery-overlay">
+                            <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                            <span class="gallery-title">Penerimaan Tim KKN</span>
+                            <span class="gallery-cat">Keseharian</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item gallery-filter-item" data-category="kegiatan">
+                    <a href="img/galeri-kegiatan.png" data-fancybox="galeri-full" data-caption="Sosialisasi Program Kerja kepada Perangkat Desa dan Warga">
+                        <img src="img/galeri-kegiatan.png" alt="Sosialisasi Program Kerja">
+                        <div class="gallery-overlay">
+                            <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                            <span class="gallery-title">Sosialisasi Proker</span>
+                            <span class="gallery-cat">Program Kerja</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item gallery-filter-item" data-category="budaya">
+                    <a href="img/galeri-budaya.png" data-fancybox="galeri-full" data-caption="Kegiatan Bimbingan Belajar Gratis untuk Anak-Anak">
+                        <img src="img/galeri-budaya.png" alt="Bimbingan Belajar">
+                        <div class="gallery-overlay">
+                            <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                            <span class="gallery-title">Bimbingan Belajar</span>
+                            <span class="gallery-cat">Edukasi & UMKM</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item gallery-filter-item" data-category="pembangunan">
+                    <a href="img/galeri-pembangunan.png" data-fancybox="galeri-full" data-caption="Kerja Bakti Bersih Lingkungan Bersama Warga">
+                        <img src="img/galeri-pembangunan.png" alt="Kerja Bakti">
+                        <div class="gallery-overlay">
+                            <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                            <span class="gallery-title">Kerja Bakti Desa</span>
+                            <span class="gallery-cat">Sosial Warga</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item gallery-filter-item" data-category="alam">
+                    <a href="img/desa-sawah.png" data-fancybox="galeri-full" data-caption="Tim KKN Melakukan Survei Potensi Pertanian Desa">
+                        <img src="img/desa-sawah.png" alt="Survei Desa">
+                        <div class="gallery-overlay">
+                            <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                            <span class="gallery-title">Survei Potensi Desa</span>
+                            <span class="gallery-cat">Keseharian</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item gallery-filter-item" data-category="budaya">
+                    <a href="img/ukir-jepara.png" data-fancybox="galeri-full" data-caption="Pendampingan Pemasaran Digital bagi Pengrajin Lokal">
+                        <img src="img/ukir-jepara.png" alt="Pendampingan UMKM">
+                        <div class="gallery-overlay">
+                            <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                            <span class="gallery-title">Pendampingan UMKM</span>
+                            <span class="gallery-cat">Edukasi & UMKM</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item gallery-filter-item" data-category="kegiatan">
+                    <a href="img/kepala-desa.png" data-fancybox="galeri-full" data-caption="Koordinasi dengan Kepala Desa Terkait Pelaksanaan Program">
+                        <img src="img/kepala-desa.png" alt="Koordinasi Kades">
+                        <div class="gallery-overlay">
+                            <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                            <span class="gallery-title">Koordinasi Proker</span>
+                            <span class="gallery-cat">Program Kerja</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item gallery-filter-item" data-category="alam">
+                    <a href="img/hero-banner.png" data-fancybox="galeri-full" data-caption="Kebersamaan Tim KKN di Posko">
+                        <img src="img/hero-banner.png" alt="Posko KKN" style="filter:hue-rotate(15deg);">
+                        <div class="gallery-overlay">
+                            <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                            <span class="gallery-title">Posko KKN</span>
+                            <span class="gallery-cat">Keseharian</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item gallery-filter-item" data-category="pembangunan">
+                    <a href="img/galeri-pembangunan.png" data-fancybox="galeri-full" data-caption="Bantuan Pembuatan Papan Nama Jalan Desa">
+                        <img src="img/galeri-pembangunan.png" alt="Papan Nama Jalan" style="filter:brightness(1.05);">
+                        <div class="gallery-overlay">
+                            <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                            <span class="gallery-title">Pembuatan Papan Jalan</span>
+                            <span class="gallery-cat">Sosial Warga</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6">
+                    <div class="footer-brand">
+                        <div style="width:45px;height:45px;background:linear-gradient(135deg,var(--primary-light),var(--accent));border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:20px;"><i class="fas fa-users"></i></div>
+                        <span class="footer-brand-name">KKN Desa Papasan</span>
+                    </div>
+                    <p>Website resmi KKN Desa Papasan, Kecamatan Bangsri, Kabupaten Jepara, Provinsi Jawa Tengah. Portal informasi kegiatan, program kerja, dan dokumentasi KKN.</p>
+                    <div class="footer-social">
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Menu</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html#beranda"><i class="fas fa-chevron-right"></i> Beranda</a></li>
+                        <li><a href="index.html#tentang"><i class="fas fa-chevron-right"></i> Tentang</a></li>
+                        <li><a href="index.html#program"><i class="fas fa-chevron-right"></i> Program</a></li>
+                        <li><a href="index.html#tim"><i class="fas fa-chevron-right"></i> Tim</a></li>
+                        <li><a href="berita.html"><i class="fas fa-chevron-right"></i> Berita</a></li>
+                        <li><a href="galeri.html"><i class="fas fa-chevron-right"></i> Galeri</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Kontak</h5>
+                    <div class="footer-contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">Desa Papasan, Kec. Bangsri, Kab. Jepara, Jateng</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="contact-text">0812-xxxx-xxxx</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">kkn.papasan@email.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 KKN Desa Papasan. Made with <i class="fas fa-heart" style="color:var(--accent);"></i> by Tim KKN</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Kembali ke atas"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
