@@ -3,7 +3,43 @@
    Main JavaScript
    ================================================================ */
 
+// Apply dark mode early to prevent flicker
+const savedTheme = localStorage.getItem('theme') || 'light';
+if (savedTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+}
+
 document.addEventListener('DOMContentLoaded', function () {
+
+    // ================================================================
+    // DARK MODE TOGGLE
+    // ================================================================
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    if (darkModeToggle) {
+        const icon = darkModeToggle.querySelector('i');
+        if (document.documentElement.getAttribute('data-theme') === 'dark') {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        }
+        
+        darkModeToggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            let newTheme = 'light';
+            
+            if (currentTheme === 'dark') {
+                document.documentElement.removeAttribute('data-theme');
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                newTheme = 'dark';
+            }
+            localStorage.setItem('theme', newTheme);
+        });
+    }
 
     // ================================================================
     // LOADING SCREEN
@@ -356,6 +392,34 @@ document.addEventListener('DOMContentLoaded', function () {
             el.style.transform = 'translateY(' + (window.scrollY * speed) + 'px)';
         });
     });
+
+    // ================================================================
+    // BERITA ACARA TABS (SD & MI)
+    // ================================================================
+    const baTabBtns = document.querySelectorAll('.ba-tab-btn');
+    if (baTabBtns.length > 0) {
+        baTabBtns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                const targetTab = this.getAttribute('data-tab');
+
+                // Remove active from all buttons
+                baTabBtns.forEach(function (b) { b.classList.remove('active'); });
+                // Add active to clicked button
+                this.classList.add('active');
+
+                // Hide all tab contents
+                document.querySelectorAll('.ba-tab-content').forEach(function (content) {
+                    content.classList.remove('active');
+                });
+
+                // Show target tab content
+                const targetContent = document.getElementById('tab-' + targetTab);
+                if (targetContent) {
+                    targetContent.classList.add('active');
+                }
+            });
+        });
+    }
 
 });
 

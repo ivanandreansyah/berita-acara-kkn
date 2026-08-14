@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Berita Acara Pelaksanaan Kegiatan Edukasi Pendidikan Berbasis Inovasi dan Lomba Daur Ulang Sampah - KKN UNISNU Desa Papasan">
+    <title>Edukasi Pendidikan & Lomba Daur Ulang Sampah - Desa Papasan</title>
+    <link rel="icon" type="image/png" href="img/hero-banner.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="loading-screen">
+        <div class="loading-logo"><i class="fas fa-users"></i></div>
+        <div class="loading-text">KKN Desa Papasan</div>
+        <div class="loading-bar">
+            <div class="loading-bar-inner"></div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-main fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div
+                    style="width:45px;height:45px;background:linear-gradient(135deg,var(--primary),var(--accent));border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:20px;">
+                    <i class="fas fa-users"></i></div>
+                <div class="brand-text"><span class="brand-name">KKN Desa Papasan</span><span class="brand-sub">Kec.
+                        Bangsri, Kab. Jepara</span></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><i
+                    class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#program">Program</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#tim">Tim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#kontak">Kontak</a></li>
+                    <li class="nav-item">
+                        <button id="darkModeToggle" class="nav-link btn btn-link"
+                            style="border:none;background:transparent;padding:8px 16px;" aria-label="Toggle Dark Mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container position-relative">
+            <h1 data-aos="fade-up" style="font-size:1.8rem;">Detail Berita</h1>
+            <div class="breadcrumb-custom" data-aos="fade-up" data-aos-delay="100">
+                <a href="index.html">Beranda</a>
+                <span class="separator">/</span>
+                <a href="berita.html">Berita</a>
+                <span class="separator">/</span>
+                <span class="current">Detail</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS DETAIL -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <article>
+                        <!-- Header -->
+                        <div class="news-detail-header mb-4">
+                            <span class="badge mb-3"
+                                style="background:linear-gradient(135deg,#10b981,#059669);color:white;padding:6px 16px;border-radius:var(--radius-pill);font-weight:600;">Edukasi
+                                & Lingkungan</span>
+                            <h1 class="h2 mb-3"
+                                style="font-family:var(--font-heading);font-weight:800;line-height:1.3;">Edukasi
+                                Pendidikan Berbasis Inovasi dan Lomba Daur Ulang Sampah di Desa Papasan</h1>
+                            <div class="news-detail-meta">
+                                <span><i class="far fa-calendar-alt"></i> 3–8 Agustus 2026</span>
+                                <span><i class="far fa-eye"></i> 0 views</span>
+                                <span><i class="far fa-clock"></i> 6 min read</span>
+                            </div>
+                        </div>
+
+                        <!-- Tab Navigation SD & MI -->
+                        <div class="ba-tabs-wrapper">
+                            <div class="ba-tabs-nav">
+                                <button class="ba-tab-btn active" data-tab="sd" id="tab-btn-sd">
+                                    <span class="tab-icon"><i class="fas fa-school"></i></span>
+                                    <span class="tab-label">SDN 1 Papasan<small>Sekolah Dasar</small></span>
+                                </button>
+                                <button class="ba-tab-btn" data-tab="mi" id="tab-btn-mi">
+                                    <span class="tab-icon"><i class="fas fa-mosque"></i></span>
+                                    <span class="tab-label">MI NU Papasan<small>Madrasah Ibtidaiyah</small></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- ===== TAB CONTENT: SDN 1 PAPASAN ===== -->
+                        <div class="ba-tab-content active" id="tab-sd">
+                            <!-- School Header Card -->
+                            <div class="ba-school-header">
+                                <div class="school-icon sd"><i class="fas fa-school"></i></div>
+                                <div class="school-info">
+                                    <h4>SDN 1 Papasan</h4>
+                                    <p><i class="fas fa-map-marker-alt me-1"></i>Desa Papasan, Kec. Bangsri, Kab. Jepara</p>
+                                </div>
+                            </div>
+
+                            <!-- Featured Image SD -->
+                            <div class="ba-image-container">
+                                <img src="img/sd.jpg" alt="Kegiatan Edukasi di SDN 1 Papasan">
+                                <span class="ba-image-badge sd"><i class="fas fa-school me-1"></i>SDN 1 Papasan</span>
+                            </div>
+
+                            <!-- Content SD -->
+                            <div class="news-detail-content">
+                                <!-- Kop Berita Acara SD -->
+                                <div style="text-align:center;margin-bottom:30px;">
+                                    <h3
+                                        style="font-family:var(--font-heading);font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;">
+                                        BERITA ACARA</h3>
+                                    <h5
+                                        style="font-family:var(--font-heading);font-weight:700;line-height:1.5;max-width:600px;margin:0 auto;">
+                                        PELAKSANAAN KEGIATAN EDUKASI PENDIDIKAN BERBASIS INOVASI DAN LOMBA DAUR ULANG
+                                        SAMPAH DI SDN 1 PAPASAN</h5>
+                                </div>
+
+                                <hr style="border-color:var(--border);margin-bottom:25px;">
+
+                                <p>
+                                    Pada hari <strong>Minggu, 3 Agustus 2026</strong>, telah dilaksanakan kegiatan
+                                    <strong>Edukasi Pendidikan Berbasis Inovasi dan Lomba Daur Ulang Sampah</strong> di
+                                    <strong>SDN 1 Papasan</strong>, Kecamatan Bangsri, Kabupaten Jepara, yang
+                                    diselenggarakan oleh Mahasiswa KKN UNISNU Desa Papasan.
+                                </p>
+
+                                <p>
+                                    Rangkaian kegiatan di SDN 1 Papasan diawali dengan <strong>koordinasi bersama pihak
+                                        sekolah</strong> pada tanggal <strong>29 Juli</strong>, guna membahas teknis
+                                    pelaksanaan, jadwal, serta mekanisme kegiatan yang akan diikuti oleh siswa-siswi.
+                                </p>
+
+                                <p>
+                                    Selanjutnya, dilaksanakan <strong>sesi sosialisasi</strong> pada tanggal <strong>3
+                                        Agustus</strong>. Sesi sosialisasi dikoordinir oleh penanggung jawab program kerja,
+                                    <strong>Khalimatus Sa'diyah</strong> selaku Koordinator Mahasiswa Desa (Kormades)
+                                    sekaligus penanggung jawab progja, bersama <strong>Nur Laila Eka Rahmawati</strong>.
+                                    Materi disampaikan berupa edukasi mengenai pentingnya menjaga lingkungan dan daur ulang
+                                    sampah, disertai <em>game</em> interaktif agar peserta lebih antusias dan mudah memahami
+                                    materi yang diberikan.
+                                </p>
+
+                                <p>
+                                    Kegiatan dilanjutkan dengan <strong>sesi penjurian dan pengumpulan karya</strong> pada
+                                    tanggal <strong>7 Agustus</strong>. Sesi ini diawali dengan refleksi bersama
+                                    mengenai pentingnya daur ulang sampah, dengan penekanan bahwa tidak ada karya peserta
+                                    yang buruk, sehingga seluruh peserta tetap merasa dihargai atas hasil karyanya. Sembari
+                                    menunggu proses penjurian, dilaksanakan <em>game</em> <strong>"Pohon
+                                        Harapan"</strong> sebagai pengisi acara. Penilaian karya dilakukan oleh dua orang
+                                    guru dari SDN 1 Papasan yang bertindak sebagai juri. Rangkaian kegiatan ditutup
+                                    dengan sesi pengumuman pemenang, pembagian hadiah, dan foto bersama.
+                                </p>
+
+                                <p>
+                                    Kegiatan berlangsung dengan tertib dan lancar, serta mendapat sambutan dan antusiasme
+                                    yang baik dari pihak sekolah, guru, maupun siswa yang mengikuti seluruh rangkaian
+                                    kegiatan.
+                                </p>
+
+                                <p>
+                                    Demikian Berita Acara ini dibuat dengan sebenar-benarnya untuk dipergunakan sebagaimana
+                                    mestinya.
+                                </p>
+
+                                <!-- Tanda Tangan SD -->
+                                <div style="margin-top:40px;">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <!-- Kosong untuk layout -->
+                                        </div>
+                                        <div class="col-md-6 text-center">
+                                            <p style="margin-bottom:5px;">Papasan, 7 Agustus 2026</p>
+                                            <p style="margin-bottom:60px;">Ketua Pelaksana</p>
+                                            <p style="margin-bottom:5px;font-weight:700;text-decoration:underline;">
+                                                __________________________</p>
+                                            <p style="margin-bottom:0;">Mahasiswa KKN UNISNU</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Info Box Ringkasan SD -->
+                                <div
+                                    style="background:linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(29, 78, 216, 0.08));border-radius:var(--radius-lg);padding:24px;margin-top:30px;border:1px solid var(--border);">
+                                    <h5 style="font-family:var(--font-heading);font-weight:700;margin-bottom:15px;">
+                                        <i class="fas fa-clipboard-list me-2" style="color:#3b82f6;"></i>Ringkasan
+                                        Kegiatan — SDN 1 Papasan
+                                    </h5>
+                                    <div class="row g-3">
+                                        <div class="col-sm-6">
+                                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                                <i class="fas fa-calendar-day"
+                                                    style="color:#3b82f6;width:20px;text-align:center;"></i>
+                                                <div>
+                                                    <small style="opacity:0.7;">Periode Kegiatan</small>
+                                                    <div style="font-weight:600;">3 & 7 Agustus 2026</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                                <i class="fas fa-school"
+                                                    style="color:#3b82f6;width:20px;text-align:center;"></i>
+                                                <div>
+                                                    <small style="opacity:0.7;">Tempat</small>
+                                                    <div style="font-weight:600;">SDN 1 Papasan</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                                <i class="fas fa-user-tie"
+                                                    style="color:#3b82f6;width:20px;text-align:center;"></i>
+                                                <div>
+                                                    <small style="opacity:0.7;">Penanggung Jawab</small>
+                                                    <div style="font-weight:600;">Khalimatus Sa'diyah (Kormades)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                                <i class="fas fa-user-friends"
+                                                    style="color:#3b82f6;width:20px;text-align:center;"></i>
+                                                <div>
+                                                    <small style="opacity:0.7;">Pendamping</small>
+                                                    <div style="font-weight:600;">Nur Laila Eka Rahmawati</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                                <i class="fas fa-users"
+                                                    style="color:#3b82f6;width:20px;text-align:center;"></i>
+                                                <div>
+                                                    <small style="opacity:0.7;">Peserta</small>
+                                                    <div style="font-weight:600;">Siswa-siswi SDN 1 Papasan</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                                <i class="fas fa-recycle"
+                                                    style="color:#3b82f6;width:20px;text-align:center;"></i>
+                                                <div>
+                                                    <small style="opacity:0.7;">Penyelenggara</small>
+                                                    <div style="font-weight:600;">Mahasiswa KKN UNISNU</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Rundown Kegiatan SD -->
+                                <div style="margin-top:25px;">
+                                    <h5 style="font-family:var(--font-heading);font-weight:700;margin-bottom:15px;">
+                                        <i class="fas fa-list-ol me-2" style="color:#3b82f6;"></i>Rundown Kegiatan — SDN 1 Papasan
+                                    </h5>
+                                    <div style="position:relative;padding-left:28px;">
+                                        <div
+                                            style="position:absolute;left:10px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,#3b82f6,#1d4ed8);border-radius:2px;">
+                                        </div>
+                                        <div style="margin-bottom:16px;position:relative;">
+                                            <div
+                                                style="position:absolute;left:-23px;top:6px;width:10px;height:10px;background:#3b82f6;border-radius:50%;border:2px solid white;box-shadow:0 0 0 2px #3b82f6;">
+                                            </div>
+                                            <strong style="color:#3b82f6;">29 Juli — Koordinasi dengan SDN 1 Papasan</strong>
+                                            <p style="margin:4px 0 0;font-size:0.9rem;opacity:0.85;">Pertemuan koordinasi
+                                                dengan pihak SDN 1 Papasan untuk membahas teknis pelaksanaan, jadwal,
+                                                serta mekanisme kegiatan.</p>
+                                        </div>
+                                        <div style="margin-bottom:16px;position:relative;">
+                                            <div
+                                                style="position:absolute;left:-23px;top:6px;width:10px;height:10px;background:#0891b2;border-radius:50%;border:2px solid white;box-shadow:0 0 0 2px #0891b2;">
+                                            </div>
+                                            <strong style="color:#0891b2;">3 Agustus — Sosialisasi & Edukasi di SDN 1 Papasan</strong>
+                                            <p style="margin:4px 0 0;font-size:0.9rem;opacity:0.85;">Sesi edukasi dan game
+                                                interaktif tentang pentingnya menjaga lingkungan dan daur ulang sampah bersama siswa-siswi SDN 1 Papasan.</p>
+                                        </div>
+                                        <div style="margin-bottom:16px;position:relative;">
+                                            <div
+                                                style="position:absolute;left:-23px;top:6px;width:10px;height:10px;background:#d97706;border-radius:50%;border:2px solid white;box-shadow:0 0 0 2px #d97706;">
+                                            </div>
+                                            <strong style="color:#d97706;">7 Agustus — Penjurian & Pengumpulan Karya</strong>
+                                            <p style="margin:4px 0 0;font-size:0.9rem;opacity:0.85;">Refleksi bersama,
+                                                pelaksanaan game "Pohon Harapan", serta penilaian karya daur ulang oleh
+                                                guru SDN 1 Papasan.</p>
+                                        </div>
+                                        <div style="position:relative;">
+                                            <div
+                                                style="position:absolute;left:-23px;top:6px;width:10px;height:10px;background:#7c3aed;border-radius:50%;border:2px solid white;box-shadow:0 0 0 2px #7c3aed;">
+                                            </div>
+                                            <strong style="color:#7c3aed;">7 Agustus — Pengumuman & Penutupan</strong>
+                                            <p style="margin:4px 0 0;font-size:0.9rem;opacity:0.85;">Pengumuman pemenang
+                                                lomba, pembagian hadiah, dan foto bersama sebagai penutup rangkaian
+                                                kegiatan di SDN 1 Papasan.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ===== TAB CONTENT: MI NU PAPASAN ===== -->
+                        <div class="ba-tab-content" id="tab-mi">
+                            <!-- School Header Card -->
+                            <div class="ba-school-header">
+                                <div class="school-icon mi"><i class="fas fa-mosque"></i></div>
+                                <div class="school-info">
+                                    <h4>MI NU Papasan</h4>
+                                    <p><i class="fas fa-map-marker-alt me-1"></i>Desa Papasan, Kec. Bangsri, Kab. Jepara</p>
+                                </div>
+                            </div>
+
+                            <!-- Featured Image MI -->
+                            <div class="ba-image-container">
+                                <img src="img/mi.JPG" alt="Kegiatan Edukasi di MI NU Papasan">
+                                <span class="ba-image-badge mi"><i class="fas fa-mosque me-1"></i>MI NU Papasan</span>
+                            </div>
+
+                            <!-- Content MI -->
+                            <div class="news-detail-content">
+                                <!-- Kop Berita Acara MI -->
+                                <div style="text-align:center;margin-bottom:30px;">
+                                    <h3
+                                        style="font-family:var(--font-heading);font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;">
+                                        BERITA ACARA</h3>
+                                    <h5
+                                        style="font-family:var(--font-heading);font-weight:700;line-height:1.5;max-width:600px;margin:0 auto;">
+                                        PELAKSANAAN KEGIATAN EDUKASI PENDIDIKAN BERBASIS INOVASI DAN LOMBA DAUR ULANG
+                                        SAMPAH DI MI NU PAPASAN</h5>
+                                </div>
+
+                                <hr style="border-color:var(--border);margin-bottom:25px;">
+
+                                <p>
+                                    Pada hari <strong>Senin, 4 Agustus 2026</strong>, telah dilaksanakan kegiatan
+                                    <strong>Edukasi Pendidikan Berbasis Inovasi dan Lomba Daur Ulang Sampah</strong> di
+                                    <strong>MI NU Papasan</strong>, Kecamatan Bangsri, Kabupaten Jepara, yang
+                                    diselenggarakan oleh Mahasiswa KKN UNISNU Desa Papasan.
+                                </p>
+
+                                <p>
+                                    Rangkaian kegiatan di MI NU Papasan diawali dengan <strong>koordinasi bersama pihak
+                                        sekolah</strong> pada tanggal <strong>29 Juli</strong>, guna membahas teknis
+                                    pelaksanaan, jadwal, serta mekanisme kegiatan yang akan diikuti oleh siswa-siswi.
+                                </p>
+
+                                <p>
+                                    Selanjutnya, dilaksanakan <strong>sesi sosialisasi</strong> pada tanggal <strong>4
+                                        Agustus</strong>. Sesi sosialisasi dikoordinir oleh penanggung jawab program kerja,
+                                    <strong>Khalimatus Sa'diyah</strong> selaku Koordinator Mahasiswa Desa (Kormades)
+                                    sekaligus penanggung jawab progja, bersama <strong>Nur Laila Eka Rahmawati</strong>.
+                                    Materi disampaikan berupa edukasi mengenai pentingnya menjaga lingkungan dan daur ulang
+                                    sampah, disertai <em>game</em> interaktif agar peserta lebih antusias dan mudah memahami
+                                    materi yang diberikan.
+                                </p>
+
+                                <p>
+                                    Kegiatan dilanjutkan dengan <strong>sesi penjurian dan pengumpulan karya</strong> pada
+                                    tanggal <strong>8 Agustus</strong>. Sesi ini diawali dengan refleksi bersama
+                                    mengenai pentingnya daur ulang sampah, dengan penekanan bahwa tidak ada karya peserta
+                                    yang buruk, sehingga seluruh peserta tetap merasa dihargai atas hasil karyanya. Sembari
+                                    menunggu proses penjurian, dilaksanakan <em>game</em> <strong>"Pohon
+                                        Harapan"</strong> sebagai pengisi acara. Penilaian karya dilakukan oleh dua orang
+                                    guru dari MI NU Papasan yang bertindak sebagai juri. Rangkaian kegiatan ditutup
+                                    dengan sesi pengumuman pemenang, pembagian hadiah, dan foto bersama.
+                                </p>
+
+                                <p>
+                                    Kegiatan berlangsung dengan tertib dan lancar, serta mendapat sambutan dan antusiasme
+                                    yang baik dari pihak sekolah, guru, maupun siswa yang mengikuti seluruh rangkaian
+                                    kegiatan.
+                                </p>
+
+                                <p>
+                                    Demikian Berita Acara ini dibuat dengan sebenar-benarnya untuk dipergunakan sebagaimana
+                                    mestinya.
+                                </p>
+
+                                <!-- Tanda Tangan MI -->
+                                <div style="margin-top:40px;">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <!-- Kosong untuk layout -->
+                                        </div>
+                                        <div class="col-md-6 text-center">
+                                            <p style="margin-bottom:5px;">Papasan, 8 Agustus 2026</p>
+                                            <p style="margin-bottom:60px;">Ketua Pelaksana</p>
+                                            <p style="margin-bottom:5px;font-weight:700;text-decoration:underline;">
+                                                __________________________</p>
+                                            <p style="margin-bottom:0;">Mahasiswa KKN UNISNU</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Info Box Ringkasan MI -->
+                                <div
+                                    style="background:linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(5, 150, 105, 0.08));border-radius:var(--radius-lg);padding:24px;margin-top:30px;border:1px solid var(--border);">
+                                    <h5 style="font-family:var(--font-heading);font-weight:700;margin-bottom:15px;">
+                                        <i class="fas fa-clipboard-list me-2" style="color:#10b981;"></i>Ringkasan
+                                        Kegiatan — MI NU Papasan
+                                    </h5>
+                                    <div class="row g-3">
+                                        <div class="col-sm-6">
+                                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                                <i class="fas fa-calendar-day"
+                                                    style="color:#10b981;width:20px;text-align:center;"></i>
+                                                <div>
+                                                    <small style="opacity:0.7;">Periode Kegiatan</small>
+                                                    <div style="font-weight:600;">4 & 8 Agustus 2026</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                                <i class="fas fa-mosque"
+                                                    style="color:#10b981;width:20px;text-align:center;"></i>
+                                                <div>
+                                                    <small style="opacity:0.7;">Tempat</small>
+                                                    <div style="font-weight:600;">MI NU Papasan</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                                <i class="fas fa-user-tie"
+                                                    style="color:#10b981;width:20px;text-align:center;"></i>
+                                                <div>
+                                                    <small style="opacity:0.7;">Penanggung Jawab</small>
+                                                    <div style="font-weight:600;">Khalimatus Sa'diyah (Kormades)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                                <i class="fas fa-user-friends"
+                                                    style="color:#10b981;width:20px;text-align:center;"></i>
+                                                <div>
+                                                    <small style="opacity:0.7;">Pendamping</small>
+                                                    <div style="font-weight:600;">Nur Laila Eka Rahmawati</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                                <i class="fas fa-users"
+                                                    style="color:#10b981;width:20px;text-align:center;"></i>
+                                                <div>
+                                                    <small style="opacity:0.7;">Peserta</small>
+                                                    <div style="font-weight:600;">Siswa-siswi MI NU Papasan</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                                <i class="fas fa-recycle"
+                                                    style="color:#10b981;width:20px;text-align:center;"></i>
+                                                <div>
+                                                    <small style="opacity:0.7;">Penyelenggara</small>
+                                                    <div style="font-weight:600;">Mahasiswa KKN UNISNU</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Rundown Kegiatan MI -->
+                                <div style="margin-top:25px;">
+                                    <h5 style="font-family:var(--font-heading);font-weight:700;margin-bottom:15px;">
+                                        <i class="fas fa-list-ol me-2" style="color:#10b981;"></i>Rundown Kegiatan — MI NU Papasan
+                                    </h5>
+                                    <div style="position:relative;padding-left:28px;">
+                                        <div
+                                            style="position:absolute;left:10px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,#10b981,#059669);border-radius:2px;">
+                                        </div>
+                                        <div style="margin-bottom:16px;position:relative;">
+                                            <div
+                                                style="position:absolute;left:-23px;top:6px;width:10px;height:10px;background:#10b981;border-radius:50%;border:2px solid white;box-shadow:0 0 0 2px #10b981;">
+                                            </div>
+                                            <strong style="color:#10b981;">29 Juli — Koordinasi dengan MI NU Papasan</strong>
+                                            <p style="margin:4px 0 0;font-size:0.9rem;opacity:0.85;">Pertemuan koordinasi
+                                                dengan pihak MI NU Papasan untuk membahas teknis pelaksanaan, jadwal,
+                                                serta mekanisme kegiatan.</p>
+                                        </div>
+                                        <div style="margin-bottom:16px;position:relative;">
+                                            <div
+                                                style="position:absolute;left:-23px;top:6px;width:10px;height:10px;background:#0891b2;border-radius:50%;border:2px solid white;box-shadow:0 0 0 2px #0891b2;">
+                                            </div>
+                                            <strong style="color:#0891b2;">4 Agustus — Sosialisasi & Edukasi di MI NU Papasan</strong>
+                                            <p style="margin:4px 0 0;font-size:0.9rem;opacity:0.85;">Sesi edukasi dan game
+                                                interaktif tentang pentingnya menjaga lingkungan dan daur ulang sampah bersama siswa-siswi MI NU Papasan.</p>
+                                        </div>
+                                        <div style="margin-bottom:16px;position:relative;">
+                                            <div
+                                                style="position:absolute;left:-23px;top:6px;width:10px;height:10px;background:#d97706;border-radius:50%;border:2px solid white;box-shadow:0 0 0 2px #d97706;">
+                                            </div>
+                                            <strong style="color:#d97706;">8 Agustus — Penjurian & Pengumpulan Karya</strong>
+                                            <p style="margin:4px 0 0;font-size:0.9rem;opacity:0.85;">Refleksi bersama,
+                                                pelaksanaan game "Pohon Harapan", serta penilaian karya daur ulang oleh
+                                                guru MI NU Papasan.</p>
+                                        </div>
+                                        <div style="position:relative;">
+                                            <div
+                                                style="position:absolute;left:-23px;top:6px;width:10px;height:10px;background:#7c3aed;border-radius:50%;border:2px solid white;box-shadow:0 0 0 2px #7c3aed;">
+                                            </div>
+                                            <strong style="color:#7c3aed;">8 Agustus — Pengumuman & Penutupan</strong>
+                                            <p style="margin:4px 0 0;font-size:0.9rem;opacity:0.85;">Pengumuman pemenang
+                                                lomba, pembagian hadiah, dan foto bersama sebagai penutup rangkaian
+                                                kegiatan di MI NU Papasan.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Tags -->
+                        <div class="mt-4 d-flex flex-wrap gap-2">
+                            <span class="badge"
+                                style="background:var(--bg-light);color:var(--text-body);padding:6px 14px;border-radius:var(--radius-pill);font-weight:500;font-size:0.8rem;">#KKN</span>
+                            <span class="badge"
+                                style="background:var(--bg-light);color:var(--text-body);padding:6px 14px;border-radius:var(--radius-pill);font-weight:500;font-size:0.8rem;">#EdukasiPendidikan</span>
+                            <span class="badge"
+                                style="background:var(--bg-light);color:var(--text-body);padding:6px 14px;border-radius:var(--radius-pill);font-weight:500;font-size:0.8rem;">#DaurUlangSampah</span>
+                            <span class="badge"
+                                style="background:var(--bg-light);color:var(--text-body);padding:6px 14px;border-radius:var(--radius-pill);font-weight:500;font-size:0.8rem;">#Lingkungan</span>
+                            <span class="badge"
+                                style="background:var(--bg-light);color:var(--text-body);padding:6px 14px;border-radius:var(--radius-pill);font-weight:500;font-size:0.8rem;">#DesaPapasan</span>
+                            <span class="badge"
+                                style="background:var(--bg-light);color:var(--text-body);padding:6px 14px;border-radius:var(--radius-pill);font-weight:500;font-size:0.8rem;">#InovasiPendidikan</span>
+                        </div>
+
+                        <!-- Share -->
+                        <div class="mt-4 pt-4" style="border-top:1px solid var(--border);">
+                            <h5 class="font-body fw-bold mb-3" style="font-size:0.95rem;">Bagikan Berita:</h5>
+                            <div class="share-buttons">
+                                <button class="share-btn facebook" data-share="facebook" title="Facebook"><i
+                                        class="fab fa-facebook-f"></i></button>
+                                <button class="share-btn twitter" data-share="twitter" title="Twitter"><i
+                                        class="fab fa-twitter"></i></button>
+                                <button class="share-btn whatsapp" data-share="whatsapp" title="WhatsApp"><i
+                                        class="fab fa-whatsapp"></i></button>
+                                <button class="share-btn copy-link" data-share="copy" title="Salin Link"><i
+                                        class="fas fa-link"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- SIDEBAR -->
+                <div class="col-lg-4 news-sidebar" data-aos="fade-left">
+                    <div class="sidebar-widget">
+                        <h4><i class="fas fa-fire me-2"></i>Kegiatan Terpopuler</h4>
+                        <div class="news-popular-item">
+                            <img src="img/pelatihan ai.jpeg" alt="Berita terkait">
+                            <div>
+                                <h5><a href="berita-pelatihan-ai.html">Pelatihan AI untuk Pemasaran Digital UMKM</a>
+                                </h5>
+                                <span class="pop-date"><i class="far fa-calendar-alt me-1"></i> 2 Agustus 2026</span>
+                            </div>
+                        </div>
+                        <div class="news-popular-item">
+                            <img src="img/peltihan kopi.jpeg" alt="Berita terkait">
+                            <div>
+                                <h5><a href="berita-pelatihan-kopi.html">Pelatihan Pembuatan Kopi Bersama Barista</a>
+                                </h5>
+                                <span class="pop-date"><i class="far fa-calendar-alt me-1"></i> 5 Agustus 2026</span>
+                            </div>
+                        </div>
+                        <div class="news-popular-item">
+                            <img src="img/penerjunan.jpeg" alt="Berita terkait">
+                            <div>
+                                <h5><a href="berita-penerjunan.html">Penerjunan Mahasiswa KKN UNISNU di Desa
+                                        Papasan</a></h5>
+                                <span class="pop-date"><i class="far fa-calendar-alt me-1"></i> 24 Juli 2026</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h4><i class="fas fa-folder me-2"></i>Kategori Program</h4>
+                        <ul class="category-list">
+                            <li><a href="berita.html">Pendidikan <span class="cat-count">2</span></a></li>
+                            <li><a href="berita.html">Lingkungan <span class="cat-count">1</span></a></li>
+                            <li><a href="berita.html">Ekonomi Kreatif <span class="cat-count">3</span></a></li>
+                            <li><a href="berita.html">Kesehatan <span class="cat-count">1</span></a></li>
+                            <li><a href="berita.html">Teknologi <span class="cat-count">1</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6">
+                    <div class="footer-brand">
+                        <div
+                            style="width:45px;height:45px;background:linear-gradient(135deg,var(--primary-light),var(--accent));border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:20px;">
+                            <i class="fas fa-users"></i></div>
+                        <span class="footer-brand-name">KKN Desa Papasan</span>
+                    </div>
+                    <p>Website resmi KKN Desa Papasan, Kecamatan Bangsri, Kabupaten Jepara, Provinsi Jawa Tengah.
+                        Portal informasi kegiatan, program kerja, dan dokumentasi KKN.</p>
+                    <div class="footer-social">
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Menu</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html#beranda"><i class="fas fa-chevron-right"></i> Beranda</a></li>
+                        <li><a href="index.html#tentang"><i class="fas fa-chevron-right"></i> Tentang</a></li>
+                        <li><a href="index.html#program"><i class="fas fa-chevron-right"></i> Program</a></li>
+                        <li><a href="index.html#tim"><i class="fas fa-chevron-right"></i> Tim</a></li>
+                        <li><a href="berita.html"><i class="fas fa-chevron-right"></i> Berita</a></li>
+                        <li><a href="galeri.html"><i class="fas fa-chevron-right"></i> Galeri</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Kontak</h5>
+                    <div class="footer-contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">Desa Papasan, Kec. Bangsri, Kab. Jepara, Jateng</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="contact-text">0812-xxxx-xxxx</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">kkn.papasan@email.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 KKN Desa Papasan. Made with <i class="fas fa-heart"
+                        style="color:var(--accent);"></i> by Tim KKN</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Kembali ke atas"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

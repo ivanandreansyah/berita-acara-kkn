@@ -48,6 +48,35 @@
     --font-heading: 'Playfair Display', serif;
 }
 
+[data-theme="dark"] {
+    --white: #121212;
+    --off-white: #1e1e1e;
+    --bg-light: #182218;
+    --bg-section: #121612;
+    --bg-cream: #151812;
+    --text-dark: #e0e0e0;
+    --text-body: #b0b0b0;
+    --text-muted: #808080;
+    --text-light: #555555;
+    --border: #333333;
+    --border-light: #222222;
+    
+    --shadow-xs: 0 1px 3px rgba(0,0,0,0.5);
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.6);
+    --shadow: 0 4px 15px rgba(0,0,0,0.6);
+    --shadow-md: 0 8px 25px rgba(0,0,0,0.7);
+    --shadow-lg: 0 15px 40px rgba(0,0,0,0.8);
+    --shadow-xl: 0 25px 50px rgba(0,0,0,0.9);
+}
+
+[data-theme="dark"] .navbar-main {
+    background: rgba(18, 18, 18, 0.95);
+}
+
+[data-theme="dark"] .dropdown-menu {
+    background: var(--bg-light);
+}
+
 /* ---- Reset & Base ---- */
 * {
     margin: 0;
@@ -533,7 +562,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     bottom: -20px;
     left: -20px;
-    background: white;
+    background: var(--white);
     padding: 16px 24px;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
@@ -2189,4 +2218,197 @@ h1, h2, h3, h4, h5, h6 {
     background-size: 15px 15px;
     opacity: 0.3;
     z-index: 0;
+}
+
+/* ================================================================
+   BERITA ACARA TABS (SD & MI)
+   ================================================================ */
+.ba-tabs-wrapper {
+    margin-bottom: 30px;
+}
+
+.ba-tabs-nav {
+    display: flex;
+    gap: 0;
+    background: var(--bg-light);
+    border-radius: var(--radius-lg);
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ba-tab-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    border-radius: var(--radius);
+    transition: var(--transition);
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ba-tab-btn:hover {
+    color: var(--primary);
+}
+
+.ba-tab-btn.active {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white;
+    box-shadow: 0 4px 15px rgba(27, 94, 32, 0.3);
+}
+
+.ba-tab-btn .tab-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    background: rgba(0,0,0,0.06);
+    transition: var(--transition);
+}
+
+.ba-tab-btn.active .tab-icon {
+    background: rgba(255,255,255,0.2);
+}
+
+.ba-tab-btn .tab-label small {
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    opacity: 0.7;
+    text-transform: none;
+}
+
+.ba-tab-content {
+    display: none;
+    animation: baTabFadeIn 0.4s ease;
+}
+
+.ba-tab-content.active {
+    display: block;
+}
+
+@keyframes baTabFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* BA School Header Card */
+.ba-school-header {
+    background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.06), rgba(var(--accent-rgb), 0.06));
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.ba-school-header .school-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: white;
+    flex-shrink: 0;
+}
+
+.ba-school-header .school-icon.sd {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.ba-school-header .school-icon.mi {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.ba-school-header .school-info h4 {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.15rem;
+    margin-bottom: 2px;
+}
+
+.ba-school-header .school-info p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* BA Image with school badge */
+.ba-image-container {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow);
+}
+
+.ba-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ba-image-badge {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    padding: 8px 18px;
+    border-radius: var(--radius-pill);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.ba-image-badge.sd {
+    background: rgba(59, 130, 246, 0.85);
+}
+
+.ba-image-badge.mi {
+    background: rgba(16, 185, 129, 0.85);
+}
+
+/* Responsive tabs */
+@media (max-width: 576px) {
+    .ba-tab-btn {
+        padding: 10px 14px;
+        font-size: 0.78rem;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .ba-tab-btn .tab-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+
+    .ba-tab-btn .tab-label small {
+        display: none;
+    }
+
+    .ba-school-header {
+        flex-direction: column;
+        text-align: center;
+    }
 }
