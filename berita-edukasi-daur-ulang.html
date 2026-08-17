@@ -75,7 +75,19 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-8" data-aos="fade-up">
-                    <article>
+                    <!-- PDF Download Card -->
+                    <div class="pdf-download-card" style="display:flex;align-items:center;gap:15px;background:#fef2f2;border:1px solid #fee2e2;border-radius:var(--radius-lg);padding:20px;margin-bottom:30px;box-shadow:var(--shadow-sm);">
+                        <div style="width:42px;height:42px;background:linear-gradient(135deg,#dc2626,#b91c1c);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:18px;flex-shrink:0;"><i class="fas fa-file-pdf"></i></div>
+                        <div class="pdf-info">
+                            <strong>Download Berita Acara</strong>
+                            Unduh dokumen lengkap beserta gambar dalam format PDF
+                        </div>
+                        <button class="btn-download-pdf" id="btnDownloadPDF" onclick="downloadBeritaAcaraPDF()">
+                            <i class="fas fa-file-pdf me-2"></i>Download PDF
+                        </button>
+                    </div>
+
+                    <article id="article-content">
                         <!-- Header -->
                         <div class="news-detail-header mb-4">
                             <span class="badge mb-3"
@@ -570,6 +582,27 @@
                     <div class="sidebar-widget">
                         <h4><i class="fas fa-fire me-2"></i>Kegiatan Terpopuler</h4>
                         <div class="news-popular-item">
+                            <img src="img/bsi.jpeg" alt="Berita terkait">
+                            <div>
+                                <h5><a href="berita-bank-sampah.html">Ajak Warga Papasan Kelola Sampah Jadi Emas</a></h5>
+                                <span class="pop-date"><i class="far fa-calendar-alt me-1"></i> 22 Juli – 17 Agustus 2026</span>
+                            </div>
+                        </div>
+                        <div class="news-popular-item">
+                            <img src="img/mitra 1.jpeg" alt="Berita terkait">
+                            <div>
+                                <h5><a href="berita-umkm-zero-waste.html">UNISNU Dampingi Zafata Kopi Ciptakan Produk Zero Waste</a></h5>
+                                <span class="pop-date"><i class="far fa-calendar-alt me-1"></i> 12 Juli – 16 Agustus 2026</span>
+                            </div>
+                        </div>
+                        <div class="news-popular-item">
+                            <img src="img/Mts.jpeg" alt="Berita terkait">
+                            <div>
+                                <h5><a href="berita-pencegahan-pernikahan-dini.html">Edukasi Jauhi Pernikahan Dini &amp; Pergaulan Bebas</a></h5>
+                                <span class="pop-date"><i class="far fa-calendar-alt me-1"></i> 29 Juli – 15 Agustus 2026</span>
+                            </div>
+                        </div>
+                        <div class="news-popular-item">
                             <img src="img/pelatihan ai.jpeg" alt="Berita terkait">
                             <div>
                                 <h5><a href="berita-pelatihan-ai.html">Pelatihan AI untuk Pemasaran Digital UMKM</a>
@@ -598,7 +631,7 @@
                     <div class="sidebar-widget">
                         <h4><i class="fas fa-folder me-2"></i>Kategori Program</h4>
                         <ul class="category-list">
-                            <li><a href="berita.html">Pendidikan <span class="cat-count">2</span></a></li>
+                            <li><a href="berita.html">Pendidikan <span class="cat-count">1</span></a></li>
                             <li><a href="berita.html">Lingkungan <span class="cat-count">1</span></a></li>
                             <li><a href="berita.html">Ekonomi Kreatif <span class="cat-count">3</span></a></li>
                             <li><a href="berita.html">Kesehatan <span class="cat-count">1</span></a></li>
@@ -670,7 +703,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/pdf-download.js?v=3"></script>
 </body>
 
 </html>

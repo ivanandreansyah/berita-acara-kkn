@@ -2412,3 +2412,114 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center;
     }
 }
+
+/* ================================================================
+   PDF DOWNLOAD BUTTON
+   ================================================================ */
+.btn-download-pdf {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    color: white;
+    padding: 12px 28px;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(220, 38, 38, 0.35);
+    transition: var(--transition);
+    text-decoration: none;
+    letter-spacing: 0.3px;
+}
+
+.btn-download-pdf:hover {
+    background: linear-gradient(135deg, #b91c1c, #991b1b);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(220, 38, 38, 0.45);
+    color: white;
+}
+
+.btn-download-pdf:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.pdf-download-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding: 16px 20px;
+    background: linear-gradient(135deg, rgba(220, 38, 38, 0.05), rgba(185, 28, 28, 0.05));
+    border: 1px solid rgba(220, 38, 38, 0.15);
+    border-radius: var(--radius-lg);
+}
+
+.pdf-download-bar .pdf-info {
+    flex: 1;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.pdf-download-bar .pdf-info strong {
+    display: block;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+}
+
+/* Spinner loading */
+.pdf-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255,255,255,0.4);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: pdfSpin 0.7s linear infinite;
+}
+
+@keyframes pdfSpin {
+    to { transform: rotate(360deg); }
+}
+
+/* Print / PDF media query */
+@media print {
+    .navbar-main,
+    .page-header,
+    .news-sidebar,
+    .footer-main,
+    #backToTop,
+    #loading-screen,
+    .pdf-download-bar,
+    .pdf-download-card,
+    .ba-tabs-wrapper,
+    .share-buttons,
+    .pagination-custom {
+        display: none !important;
+    }
+
+    body {
+        background: white !important;
+    }
+
+    section.section-padding {
+        padding: 20px 0 !important;
+    }
+
+    .col-lg-8 {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    article {
+        box-shadow: none !important;
+        border: none !important;
+    }
+}
+
