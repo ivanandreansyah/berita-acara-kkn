@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Berita Acara Pelaksanaan Program Bank Sampah — KKN UNISNU Desa Papasan, Pengelolaan Lingkungan dan Desa Berkelanjutan">
+    <title>Program Bank Sampah — Ajak Warga Kelola Sampah Jadi Tabungan Emas - Desa Papasan</title>
+    <link rel="icon" type="image/png" href="img/hero-banner.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="loading-screen">
+        <div class="loading-logo"><i class="fas fa-piggy-bank"></i></div>
+        <div class="loading-text">KKN Desa Papasan</div>
+        <div class="loading-bar">
+            <div class="loading-bar-inner"></div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-main fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div
+                    style="width:45px;height:45px;background:linear-gradient(135deg,var(--primary),var(--accent));border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:20px;">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="brand-text"><span class="brand-name">KKN Desa Papasan</span><span class="brand-sub">Kec.
+                        Bangsri, Kab. Jepara</span></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><i
+                    class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#program">Program</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#tim">Tim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#kontak">Kontak</a></li>
+                    <li class="nav-item">
+                        <button id="darkModeToggle" class="nav-link btn btn-link"
+                            style="border:none;background:transparent;padding:8px 16px;" aria-label="Toggle Dark Mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container position-relative">
+            <h1 data-aos="fade-up" style="font-size:1.8rem;">Detail Berita</h1>
+            <div class="breadcrumb-custom" data-aos="fade-up" data-aos-delay="100">
+                <a href="index.html">Beranda</a>
+                <span class="separator">/</span>
+                <a href="berita.html">Berita</a>
+                <span class="separator">/</span>
+                <span class="current">Detail</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS DETAIL -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <!-- PDF Download Bar -->
+                    <div class="pdf-download-bar pdf-hide">
+                        <div
+                            style="width:42px;height:42px;background:linear-gradient(135deg,#dc2626,#b91c1c);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:18px;flex-shrink:0;">
+                            <i class="fas fa-file-pdf"></i></div>
+                        <div class="pdf-info">
+                            <strong>Download Berita Acara</strong>
+                            Unduh dokumen lengkap beserta gambar dalam format PDF
+                        </div>
+                        <button class="btn-download-pdf" id="btnDownloadPDF" onclick="downloadBeritaAcaraPDF()">
+                            <i class="fas fa-file-pdf me-2"></i>Download PDF
+                        </button>
+                    </div>
+
+                    <article id="article-content">
+                        <!-- Header -->
+                        <div class="news-detail-header mb-4">
+                            <span class="badge mb-3"
+                                style="background:linear-gradient(135deg,#10b981,#059669);color:white;padding:6px 16px;border-radius:var(--radius-pill);font-weight:600;">Lingkungan
+                                &amp; Ekonomi</span>
+                            <h1 class="h2 mb-3"
+                                style="font-family:var(--font-heading);font-weight:800;line-height:1.3;">KKN UNISNU
+                                Jepara Rintis Bank Sampah di Dukuh Jroto untuk Dorong Pengelolaan Lingkungan
+                                Berkelanjutan</h1>
+                            <div class="news-detail-meta">
+                                <span><i class="far fa-calendar-alt"></i> 22 Juli – 17 Agustus 2026</span>
+                                <span><i class="far fa-eye"></i> 0 views</span>
+                                <span><i class="far fa-clock"></i> 5 min read</span>
+                            </div>
+                        </div>
+
+                        <!-- Featured Image -->
+                        <div class="ba-image-container" style="margin-bottom:32px;">
+                            <img src="img/BSI.jpg" alt="Program Bank Sampah KKN UNISNU Desa Papasan">
+                            <span class="ba-image-badge sd"
+                                style="background:linear-gradient(135deg,#059669,#065f46);"><i
+                                    class="fas fa-recycle me-1"></i>Bank Sampah — Desa Papasan</span>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="news-detail-content">
+                            <!-- Kop Berita Acara -->
+                            <div style="text-align:center;margin-bottom:30px;">
+                                <h3
+                                    style="font-family:var(--font-heading);font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;">
+                                    BERITA ACARA</h3>
+                                <h5
+                                    style="font-family:var(--font-heading);font-weight:700;line-height:1.5;max-width:700px;margin:0 auto;">
+                                    KKN UNISNU JEPARA RINTIS BANK SAMPAH DI DUKUH JROTO UNTUK DORONG PENGELOLAAN
+                                    LINGKUNGAN BERKELANJUTAN</h5>
+                            </div>
+
+                            <hr style="border-color:var(--border);margin-bottom:25px;">
+
+                            <p>
+                                <strong>Papasan, Agustus 2026</strong> — Mahasiswa Kuliah Kerja Nyata (KKN)
+                                Universitas Islam Nahdlatul Ulama (UNISNU) Jepara merintis program
+                                <strong>Bank Sampah</strong> di <strong>Dukuh Jroto, Desa Papasan</strong>. Program
+                                tersebut ditujukan terutama kepada masyarakat <strong>RT 10 dan RT 11</strong> sebagai
+                                upaya mendorong pengelolaan sampah yang lebih teratur sekaligus memberikan nilai
+                                ekonomi dari sampah yang dikumpulkan.
+                            </p>
+
+                            <p>
+                                Dalam proses persiapannya, mahasiswa KKN melakukan koordinasi dengan
+                                <strong>Bank Sampah Induk Jepara</strong> pada <strong>22 Juli 2026</strong> serta
+                                <strong>Bank Sampah Banjaran</strong>. Sosialisasi kepada masyarakat kemudian
+                                dilakukan melalui kegiatan ibu-ibu Senenan pada <strong>10 Agustus 2026</strong>.
+                                Selanjutnya, struktur pengelola Bank Sampah dibentuk pada
+                                <strong>13 Agustus 2026</strong>.
+                            </p>
+
+                            <p>
+                                Posko KKN untuk sementara dimanfaatkan sebagai tempat penimbangan dan pencatatan
+                                sampah yang dikumpulkan masyarakat. Hasil pengumpulan dan pengelolaan tersebut
+                                kemudian disampaikan kepada masyarakat pada <strong>17 Agustus 2026</strong>.
+                            </p>
+
+                            <p>
+                                Tahap awal penimbangan sampah dilaksanakan pada <strong>29 Agustus 2026</strong>
+                                di Posko KKN bersama Bank Sampah Induk Jepara. Program ini menargetkan sedikitnya
+                                <strong>30 nasabah</strong> yang dapat berpartisipasi dalam kegiatan Bank Sampah.
+                            </p>
+
+                            <p>
+                                Konsep yang diperkenalkan kepada masyarakat adalah <strong>menabung sampah</strong>
+                                sehingga sampah yang sebelumnya dianggap tidak bernilai dapat memiliki manfaat
+                                ekonomi. Pengelolaan selanjutnya diarahkan melalui
+                                <strong>Bank Sampah Induk Jepara</strong> dan <strong>Pegadaian</strong>.
+                            </p>
+
+                            <p>
+                                Apabila program dapat berjalan secara stabil dan mendapatkan partisipasi masyarakat
+                                secara berkelanjutan, pengelolaan Bank Sampah diharapkan dapat terus dikembangkan.
+                                Ke depan, terdapat peluang dukungan pendanaan desa untuk menyediakan tempat atau
+                                pos Bank Sampah yang lebih permanen.
+                            </p>
+
+                            <p>
+                                Melalui program ini, KKN UNISNU Jepara berupaya mendorong kesadaran masyarakat
+                                mengenai pentingnya pengelolaan sampah sekaligus membangun kebiasaan yang lebih
+                                peduli terhadap lingkungan.
+                            </p>
+
+                            <p>
+                                Demikian berita acara ini dibuat sebagai bahan pelaporan program kerja.
+                            </p>
+
+
+
+                            <!-- Info Box Ringkasan -->
+                            <div
+                                style="background:linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(5, 150, 105, 0.08));border-radius:var(--radius-lg);padding:24px;margin-top:30px;border:1px solid var(--border);">
+                                <h5 style="font-family:var(--font-heading);font-weight:700;margin-bottom:15px;">
+                                    <i class="fas fa-clipboard-list me-2" style="color:#10b981;"></i>Ringkasan
+                                    Kegiatan — Program Bank Sampah
+                                </h5>
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                            <i class="fas fa-calendar-day"
+                                                style="color:#10b981;width:20px;text-align:center;"></i>
+                                            <div>
+                                                <small style="opacity:0.7;">Periode Kegiatan</small>
+                                                <div style="font-weight:600;">22 Juli – 17 Agustus 2026</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                            <i class="fas fa-map-marker-alt"
+                                                style="color:#10b981;width:20px;text-align:center;"></i>
+                                            <div>
+                                                <small style="opacity:0.7;">Tempat</small>
+                                                <div style="font-weight:600;">Posko KKN &amp; Forum Ibu-Isub Senenan
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                            <i class="fas fa-users"
+                                                style="color:#10b981;width:20px;text-align:center;"></i>
+                                            <div>
+                                                <small style="opacity:0.7;">Sasaran</small>
+                                                <div style="font-weight:600;">Warga Dukuh Jroto RT 10 &amp; RT 11</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                            <i class="fas fa-handshake"
+                                                style="color:#10b981;width:20px;text-align:center;"></i>
+                                            <div>
+                                                <small style="opacity:0.7;">Mitra</small>
+                                                <div style="font-weight:600;">BS Induk &amp; BS Banjaran Jepara</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                            <i class="fas fa-coins"
+                                                style="color:#10b981;width:20px;text-align:center;"></i>
+                                            <div>
+                                                <small style="opacity:0.7;">Skema</small>
+                                                <div style="font-weight:600;">Tabungan Sampah → Emas (Pegadaian)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                                            <i class="fas fa-recycle"
+                                                style="color:#10b981;width:20px;text-align:center;"></i>
+                                            <div>
+                                                <small style="opacity:0.7;">Penyelenggara</small>
+                                                <div style="font-weight:600;">Mahasiswa KKN UNISNU</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Rundown Kegiatan -->
+                            <div style="margin-top:25px;">
+                                <h5 style="font-family:var(--font-heading);font-weight:700;margin-bottom:15px;">
+                                    <i class="fas fa-list-ol me-2" style="color:#10b981;"></i>Rundown Kegiatan — Program
+                                    Bank Sampah
+                                </h5>
+                                <div style="position:relative;padding-left:28px;">
+                                    <div
+                                        style="position:absolute;left:10px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,#10b981,#059669);border-radius:2px;">
+                                    </div>
+
+                                    <!-- Step 1 -->
+                                    <div style="margin-bottom:16px;position:relative;">
+                                        <div
+                                            style="position:absolute;left:-23px;top:6px;width:10px;height:10px;background:#10b981;border-radius:50%;border:2px solid white;box-shadow:0 0 0 2px #10b981;">
+                                        </div>
+                                        <strong style="color:#10b981;">Pra-KKN — Perencanaan Program</strong>
+                                        <p style="margin:4px 0 0;font-size:0.9rem;opacity:0.85;">Perencanaan program
+                                            Bank Sampah dilakukan sejak sebelum penerjunan KKN sebagai bagian dari
+                                            persiapan program kerja subtema Pengelolaan Lingkungan dan Desa
+                                            Berkelanjutan.</p>
+                                    </div>
+
+                                    <!-- Step 2 -->
+                                    <div style="margin-bottom:16px;position:relative;">
+                                        <div
+                                            style="position:absolute;left:-23px;top:6px;width:10px;height:10px;background:#0891b2;border-radius:50%;border:2px solid white;box-shadow:0 0 0 2px #0891b2;">
+                                        </div>
+                                        <strong style="color:#0891b2;">22 Juli 2026 — Koordinasi dengan Bank Sampah
+                                            Induk Jepara</strong>
+                                        <p style="margin:4px 0 0;font-size:0.9rem;opacity:0.85;">Koordinasi perdana
+                                            bersama Bank Sampah Induk Jepara untuk membahas mekanisme kerja sama,
+                                            skema tabungan sampah emas bersama Pegadaian, dan teknis operasional
+                                            lapangan.</p>
+                                    </div>
+
+                                    <!-- Step 3 -->
+                                    <div style="margin-bottom:16px;position:relative;">
+                                        <div
+                                            style="position:absolute;left:-23px;top:6px;width:10px;height:10px;background:#d97706;border-radius:50%;border:2px solid white;box-shadow:0 0 0 2px #d97706;">
+                                        </div>
+                                        <strong style="color:#d97706;">10 Agustus 2026 — Sosialisasi kepada Ibu-Ibu
+                                            Senenan</strong>
+                                        <p style="margin:4px 0 0;font-size:0.9rem;opacity:0.85;">Sosialisasi Program
+                                            Bank Sampah kepada ibu-ibu Senenan Desa Papasan. Materi meliputi manfaat
+                                            pengelolaan sampah rumah tangga, skema menabung sampah menjadi emas, serta
+                                            tata cara menjadi nasabah.</p>
+                                    </div>
+
+                                    <!-- Step 4 -->
+                                    <div style="margin-bottom:16px;position:relative;">
+                                        <div
+                                            style="position:absolute;left:-23px;top:6px;width:10px;height:10px;background:#7c3aed;border-radius:50%;border:2px solid white;box-shadow:0 0 0 2px #7c3aed;">
+                                        </div>
+                                        <strong style="color:#7c3aed;">13 Agustus 2026 — Pembentukan Pengurus Bank
+                                            Sampah</strong>
+                                        <p style="margin:4px 0 0;font-size:0.9rem;opacity:0.85;">Pembentukan struktur
+                                            kepengurusan Bank Sampah Desa Papasan yang terdiri atas: Ketua, Sekretaris,
+                                            Bendahara, dan Seksi Lapangan. Ditetapkan pula pos penimbangan sementara
+                                            sebagai lokasi operasional.</p>
+                                    </div>
+
+                                    <!-- Step 5 -->
+                                    <div style="position:relative;">
+                                        <div
+                                            style="position:absolute;left:-23px;top:6px;width:10px;height:10px;background:#dc2626;border-radius:50%;border:2px solid white;box-shadow:0 0 0 2px #dc2626;">
+                                        </div>
+                                        <strong style="color:#dc2626;">17 Agustus 2026 — Perekrutan Nasabah</strong>
+                                        <p style="margin:4px 0 0;font-size:0.9rem;opacity:0.85;">Perekrutan nasabah
+                                            Bank Sampah dengan target minimal 30 nasabah dari warga Dukuh Jroto RT 10
+                                            dan RT 11, menandai beroperasinya Bank Sampah Desa Papasan secara
+                                            resmi.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="mt-4 d-flex flex-wrap gap-2">
+                            <span class="badge"
+                                style="background:var(--bg-light);color:var(--text-body);padding:6px 14px;border-radius:var(--radius-pill);font-weight:500;font-size:0.8rem;">#KKN</span>
+                            <span class="badge"
+                                style="background:var(--bg-light);color:var(--text-body);padding:6px 14px;border-radius:var(--radius-pill);font-weight:500;font-size:0.8rem;">#BankSampah</span>
+                            <span class="badge"
+                                style="background:var(--bg-light);color:var(--text-body);padding:6px 14px;border-radius:var(--radius-pill);font-weight:500;font-size:0.8rem;">#TabunganEmas</span>
+                            <span class="badge"
+                                style="background:var(--bg-light);color:var(--text-body);padding:6px 14px;border-radius:var(--radius-pill);font-weight:500;font-size:0.8rem;">#Lingkungan</span>
+                            <span class="badge"
+                                style="background:var(--bg-light);color:var(--text-body);padding:6px 14px;border-radius:var(--radius-pill);font-weight:500;font-size:0.8rem;">#DesaPapasan</span>
+                            <span class="badge"
+                                style="background:var(--bg-light);color:var(--text-body);padding:6px 14px;border-radius:var(--radius-pill);font-weight:500;font-size:0.8rem;">#Pegadaian</span>
+                        </div>
+
+                        <!-- Share -->
+                        <div class="mt-4 pt-4" style="border-top:1px solid var(--border);">
+                            <h5 class="font-body fw-bold mb-3" style="font-size:0.95rem;">Bagikan Berita:</h5>
+                            <div class="share-buttons">
+                                <button class="share-btn facebook" data-share="facebook" title="Facebook"><i
+                                        class="fab fa-facebook-f"></i></button>
+                                <button class="share-btn twitter" data-share="twitter" title="Twitter"><i
+                                        class="fab fa-twitter"></i></button>
+                                <button class="share-btn whatsapp" data-share="whatsapp" title="WhatsApp"><i
+                                        class="fab fa-whatsapp"></i></button>
+                                <button class="share-btn copy-link" data-share="copy" title="Salin Link"><i
+                                        class="fas fa-link"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- SIDEBAR -->
+                <div class="col-lg-4 news-sidebar" data-aos="fade-left">
+                    <div class="sidebar-widget">
+                        <h4><i class="fas fa-fire me-2"></i>Kegiatan Terpopuler</h4>
+                        <div class="news-popular-item">
+                            <img src="img/BSI.jpg" alt="Berita populer">
+                            <div>
+                                <h5><a href="berita-bank-sampah.html">Ajak Warga Papasan Kelola Sampah Jadi Emas</a>
+                                </h5>
+                                <span class="pop-date"><i class="far fa-calendar-alt me-1"></i> 22 Juli – 17 Agustus
+                                    2026</span>
+                            </div>
+                        </div>
+                        <div class="news-popular-item">
+                            <img src="img/mitra 1.jpeg" alt="Berita populer">
+                            <div>
+                                <h5><a href="berita-umkm-zero-waste.html">UNISNU Dampingi Zafata Kopi Ciptakan Produk
+                                        Zero Waste</a></h5>
+                                <span class="pop-date"><i class="far fa-calendar-alt me-1"></i> 12 Juli – 16 Agustus
+                                    2026</span>
+                            </div>
+                        </div>
+                        <div class="news-popular-item">
+                            <img src="img/Mts.jpeg" alt="Berita populer">
+                            <div>
+                                <h5><a href="berita-pencegahan-pernikahan-dini.html">Edukasi Jauhi Pernikahan Dini &amp;
+                                        Pergaulan Bebas</a></h5>
+                                <span class="pop-date"><i class="far fa-calendar-alt me-1"></i> 29 Juli – 15 Agustus
+                                    2026</span>
+                            </div>
+                        </div>
+                        <div class="news-popular-item">
+                            <img src="img/mi.JPG" alt="Berita populer">
+                            <div>
+                                <h5><a href="berita-edukasi-daur-ulang.html">Edukasi &amp; Lomba Daur Ulang Sampah</a>
+                                </h5>
+                                <span class="pop-date"><i class="far fa-calendar-alt me-1"></i> 3–8 Agustus 2026</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h4><i class="fas fa-folder me-2"></i>Kategori Program</h4>
+                        <ul class="category-list">
+                            <li><a href="berita.html">Pendidikan <span class="cat-count">1</span></a></li>
+                            <li><a href="berita.html">Lingkungan <span class="cat-count">1</span></a></li>
+                            <li><a href="berita.html">Ekonomi Kreatif <span class="cat-count">3</span></a></li>
+                            <li><a href="berita.html">Kesehatan <span class="cat-count">1</span></a></li>
+                            <li><a href="berita.html">Teknologi <span class="cat-count">1</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6">
+                    <div class="footer-brand">
+                        <div
+                            style="width:45px;height:45px;background:linear-gradient(135deg,var(--primary-light),var(--accent));border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:20px;">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <span class="footer-brand-name">KKN Desa Papasan</span>
+                    </div>
+                    <p>Website resmi KKN Desa Papasan, Kecamatan Bangsri, Kabupaten Jepara, Provinsi Jawa Tengah.
+                        Portal informasi kegiatan, program kerja, dan dokumentasi KKN.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/kkndesapapasan2026/" target="_blank" title="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Menu</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html#beranda"><i class="fas fa-chevron-right"></i> Beranda</a></li>
+                        <li><a href="index.html#tentang"><i class="fas fa-chevron-right"></i> Tentang</a></li>
+                        <li><a href="index.html#program"><i class="fas fa-chevron-right"></i> Program</a></li>
+                        <li><a href="index.html#tim"><i class="fas fa-chevron-right"></i> Tim</a></li>
+                        <li><a href="berita.html"><i class="fas fa-chevron-right"></i> Berita</a></li>
+                        <li><a href="galeri.html"><i class="fas fa-chevron-right"></i> Galeri</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Kontak</h5>
+                    <div class="footer-contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">Desa Papasan, Kec. Bangsri, Kab. Jepara, Jateng</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="contact-text">0812-xxxx-xxxx</div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">kkndesapapasan@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 KKN Desa Papasan. Made with <i class="fas fa-heart" style="color:var(--accent);"></i> by
+                    Tim KKN</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Kembali ke atas"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/pdf-download.js?v=3"></script>
+</body>
+
+</html>
