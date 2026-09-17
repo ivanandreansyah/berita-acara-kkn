@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Feature Biografi Tokoh NU Desa Papasan: Mengenang Pak Dul (Bapak Abdul Karim), sosok perintis Nahdlatul Ulama dan pendidikan Islam di Desa Papasan, Kecamatan Bangsri, Kabupaten Jepara.">
+    <meta name="keywords" content="Biografi Pak Dul, Bapak Abdul Karim, Tokoh NU Papasan, KKN Desa Papasan, INISNU, UNISNU Jepara, Sejarah Desa Papasan, Bangsri Jepara">
+    <meta property="og:title" content="Mengenang Pak Dul, Perintis NU dan Pendidikan Islam di Papasan">
+    <meta property="og:description" content="Kisah perjuangan, sanad keilmuan, dan jejak pengabdian Almarhum Bapak Abdul Karim (Pak Dul) bersama Bapak Solekan, M.Pd.I dalam merintis kelembagaan NU dan pendidikan Islam di Desa Papasan.">
+    <meta property="og:image" content="img/tokoh-nu/pak-dul-profil.jpg">
+    <meta property="og:type" content="article">
+    <title>Mengenang Pak Dul: Perintis NU dan Pendidikan Islam di Papasan - KKN Desa Papasan</title>
+
+    <link rel="icon" type="image/jpeg" href="img/tokoh-nu/pak-dul-profil.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Scoped Enhancements for Biography Feature Story */
+        .bio-hero-section {
+            background: linear-gradient(135deg, rgba(13, 59, 18, 0.95), rgba(27, 94, 32, 0.92)), url('img/penarikan.JPG');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 140px 0 80px;
+            color: #ffffff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bio-hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 80% 20%, rgba(218, 165, 32, 0.25) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .bio-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(218, 165, 32, 0.2);
+            border: 1px solid var(--accent);
+            color: var(--accent-light);
+            padding: 6px 18px;
+            border-radius: var(--radius-pill);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .bio-hero-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 4.5vw, 3.2rem);
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .bio-lead-quote {
+            font-size: 1.15rem;
+            font-style: italic;
+            color: #e2f0d9;
+            border-left: 3px solid var(--accent);
+            padding-left: 18px;
+            margin: 20px 0 25px;
+            line-height: 1.7;
+        }
+
+        .bio-portrait-card {
+            position: relative;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-xl);
+            padding: 16px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+            max-width: 380px;
+            margin: 0 auto;
+        }
+
+        .bio-portrait-img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius-lg);
+            border: 2px solid rgba(218, 165, 32, 0.6);
+            display: block;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .bio-lifespan-tag {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(13, 59, 18, 0.9);
+            border: 1px solid var(--accent);
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: var(--radius-pill);
+            font-size: 0.82rem;
+            font-weight: 600;
+            white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Audio & Read Bar */
+        .bio-toolbar-strip {
+            background: var(--bg-light);
+            border-bottom: 1px solid var(--border);
+            padding: 14px 0;
+        }
+
+        .bio-meta-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-right: 20px;
+        }
+
+        .bio-meta-item i {
+            color: var(--primary);
+        }
+
+        /* Reading Progress Bar */
+        #readingProgress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            width: 0%;
+            z-index: 9999;
+            transition: width 0.1s ease;
+        }
+
+        /* Article Typography */
+        .bio-article-body {
+            font-size: 1.05rem;
+            line-height: 1.85;
+            color: var(--text-body);
+        }
+
+        .bio-article-body p {
+            margin-bottom: 1.45rem;
+            text-align: justify;
+        }
+
+        .bio-chapter-title {
+            font-family: var(--font-heading);
+            font-size: 1.55rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-top: 2.8rem;
+            margin-bottom: 1.2rem;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border);
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .bio-chapter-title::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: var(--accent);
+        }
+
+        [data-theme="dark"] .bio-chapter-title {
+            color: #81c784;
+        }
+
+        .bio-dropcap::first-letter {
+            float: left;
+            font-family: var(--font-heading);
+            font-size: 3.8rem;
+            line-height: 0.85;
+            padding-top: 4px;
+            padding-right: 12px;
+            padding-bottom: 2px;
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        [data-theme="dark"] .bio-dropcap::first-letter {
+            color: var(--accent);
+        }
+
+        .bio-callout {
+            background: linear-gradient(135deg, rgba(27, 94, 32, 0.05), rgba(218, 165, 32, 0.08));
+            border-left: 4px solid var(--accent);
+            border-radius: 0 var(--radius) var(--radius) 0;
+            padding: 22px 26px;
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .bio-callout-quote {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-style: italic;
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .bio-callout-author {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-align: right;
+            margin-bottom: 0;
+        }
+
+        [data-theme="dark"] .bio-callout {
+            background: rgba(27, 94, 32, 0.2);
+            border-left-color: var(--accent);
+        }
+
+        [data-theme="dark"] .bio-callout-author {
+            color: var(--accent-light);
+        }
+
+        /* Infobox Tokoh */
+        .infobox-tokoh {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 30px;
+        }
+
+        .infobox-header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: #ffffff;
+            padding: 16px 20px;
+            text-align: center;
+        }
+
+        .infobox-header h4 {
+            margin: 0;
+            font-size: 1.15rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .infobox-header p {
+            margin: 4px 0 0;
+            font-size: 0.8rem;
+            color: var(--accent-light);
+        }
+
+        .infobox-body {
+            padding: 20px;
+        }
+
+        .infobox-row {
+            display: flex;
+            padding: 8px 0;
+            border-bottom: 1px dashed var(--border);
+            font-size: 0.88rem;
+        }
+
+        .infobox-row:last-child {
+            border-bottom: none;
+        }
+
+        .infobox-label {
+            width: 38%;
+            font-weight: 600;
+            color: var(--text-muted);
+            flex-shrink: 0;
+        }
+
+        .infobox-value {
+            width: 62%;
+            color: var(--text-dark);
+        }
+
+        /* Timeline */
+        .bio-timeline {
+            position: relative;
+            padding-left: 32px;
+            margin: 35px 0;
+        }
+
+        .bio-timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            bottom: 10px;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+        }
+
+        .bio-timeline-item {
+            position: relative;
+            margin-bottom: 26px;
+        }
+
+        .bio-timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .bio-timeline-dot {
+            position: absolute;
+            left: -32px;
+            top: 4px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--white);
+            border: 3px solid var(--primary);
+            box-shadow: 0 0 0 4px rgba(27, 94, 32, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bio-timeline-year {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: var(--radius-pill);
+            margin-bottom: 6px;
+        }
+
+        .bio-timeline-title {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+
+        .bio-timeline-desc {
+            font-size: 0.92rem;
+            color: var(--text-body);
+            margin-bottom: 0;
+        }
+
+        /* Amaliyah Cards */
+        .amaliyah-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 25px 0;
+        }
+
+        .amaliyah-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px;
+            transition: var(--transition);
+            box-shadow: var(--shadow-xs);
+        }
+
+        .amaliyah-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .amaliyah-time {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--accent-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        [data-theme="dark"] .amaliyah-time {
+            color: var(--accent-light);
+        }
+
+        .amaliyah-name {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+
+        .amaliyah-detail {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+        }
+
+        /* Gallery Grid */
+        .bio-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .bio-gallery-item {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--white);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-xs);
+            transition: var(--transition);
+        }
+
+        .bio-gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .bio-gallery-thumb {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .bio-gallery-item:hover .bio-gallery-thumb {
+            transform: scale(1.05);
+        }
+
+        .bio-gallery-caption {
+            padding: 12px 14px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-body);
+            background: var(--white);
+            border-top: 1px solid var(--border);
+            line-height: 1.4;
+        }
+
+        .bio-gallery-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            transition: var(--transition);
+        }
+
+        .bio-gallery-item:hover .bio-gallery-badge {
+            background: var(--accent);
+            color: #000;
+        }
+
+        /* Audio Player Bar */
+        .audio-narrator-box {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 16px 20px;
+            margin-bottom: 25px;
+            box-shadow: var(--shadow-xs);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .audio-narrator-info {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .audio-narrator-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .audio-narrator-btn:hover {
+            background: var(--primary-light);
+            transform: scale(1.05);
+        }
+
+        /* Quick Index Floating Sidebar */
+        .bio-quick-nav {
+            position: sticky;
+            top: 100px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 30px;
+        }
+
+        .bio-quick-nav h5 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .bio-quick-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .bio-quick-nav li {
+            margin-bottom: 10px;
+        }
+
+        .bio-quick-nav a {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+            padding: 4px 0;
+        }
+
+        .bio-quick-nav a:hover,
+        .bio-quick-nav a.active {
+            color: var(--primary);
+            transform: translateX(4px);
+            font-weight: 600;
+        }
+
+        /* Print Media Styles */
+        @media print {
+            .bio-hero-section {
+                background: none !important;
+                color: #000 !important;
+                padding: 20px 0 !important;
+            }
+            .bio-hero-title {
+                color: #000 !important;
+                text-shadow: none !important;
+            }
+            .navbar, .footer-main, .bio-quick-nav, .pdf-download-card, .audio-narrator-box, .share-buttons, #darkModeToggle {
+                display: none !important;
+            }
+            body {
+                background: #fff !important;
+                color: #000 !important;
+            }
+            .col-lg-8 {
+                width: 100% !important;
+            }
+            .col-lg-4 {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- READING PROGRESS BAR -->
+    <div id="readingProgress"></div>
+
+    <!-- LOADING SCREEN -->
+    <div id="loading-screen">
+        <div class="loading-logo"><i class="fas fa-book-open"></i></div>
+        <div class="loading-text">Memuat Biografi Tokoh NU...</div>
+        <div class="loading-bar">
+            <div class="loading-bar-inner"></div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-main fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div
+                    style="width:45px;height:45px;background:linear-gradient(135deg,var(--primary),var(--accent));border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:20px;">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">KKN Desa Papasan</span>
+                    <span class="brand-sub">Kec. Bangsri, Kab. Jepara</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><i
+                    class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#program">Program</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#tim">Tim</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="berita.html">Berita</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#kontak">Kontak</a></li>
+                    <li class="nav-item">
+                        <button id="darkModeToggle" class="nav-link btn btn-link"
+                            style="border:none;background:transparent;padding:8px 16px;" aria-label="Toggle Dark Mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="bio-hero-section">
+        <div class="container position-relative" style="z-index:2;">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <div class="bio-badge">
+                        <i class="fas fa-star text-gold"></i> Feature Biografi Tokoh NU Papasan
+                    </div>
+                    <h1 class="bio-hero-title">
+                        Mengenang Pak Dul:<br>
+                        <span style="color:var(--accent-light);">Perintis NU &amp; Pendidikan Islam di Papasan</span>
+                    </h1>
+
+                    <p class="bio-lead-quote">
+                        &ldquo;Enggak banyak pesan dari beliau karena beliau memang enggak banyak wasiat, tapi beliau banyak mengajak mengembangkan Islam.&rdquo;
+                    </p>
+
+                    <div class="d-flex flex-wrap align-items-center gap-3 mt-4">
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="badge" style="background:var(--accent);color:#1a1a2e;font-weight:700;padding:8px 14px;border-radius:var(--radius-pill);">
+                                <i class="fas fa-user-check me-1"></i> Narasumber: Bapak Solekan, M.Pd.I
+                            </span>
+                        </div>
+                        <div class="text-white-50 small">
+                            <i class="far fa-calendar-alt me-1"></i> Tutup Usia: Rabu Pahing, 28 Oktober 2020 (11 Rabiul Awal 1442 H)
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-3 mt-4 pt-2">
+                        <a href="#kisah-lengkap" class="btn-gold">
+                            <i class="fas fa-book-reader me-2"></i> Baca Kisah Perjuangan
+                        </a>
+                        <a href="FUTURE%20BIOGRAFI%20TOKOH%20NU%20KKN%20DESA%20PAPASAN.pdf" download class="btn-outline-white">
+                            <i class="fas fa-file-pdf me-2"></i> Unduh Naskah PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-delay="200">
+                    <div class="bio-portrait-card">
+                        <a href="img/tokoh-nu/pak-dul-profil.jpg" data-fancybox="hero-portrait" data-caption="Almarhum Bapak Abdul Karim (Pak Dul) - Perintis Nahdlatul Ulama & Pendidikan Islam Desa Papasan">
+                            <img src="img/tokoh-nu/pak-dul-profil.jpg" alt="Bapak Abdul Karim (Pak Dul)" class="bio-portrait-img">
+                        </a>
+                        <div class="bio-lifespan-tag">
+                            <i class="fas fa-clock me-1 text-gold"></i> 26 April 1965 – 28 Oktober 2020
+                        </div>
+                    </div>
+                    <div class="mt-3 text-white-50 small">
+                        <em>Almarhum Bapak Abdul Karim (Pak Dul) — Suriyah NU Papasan</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOOLBAR & BREADCRUMB -->
+    <div class="bio-toolbar-strip">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                <div class="breadcrumb-custom mb-0">
+                    <a href="index.html">Beranda</a>
+                    <span class="separator">/</span>
+                    <a href="berita.html">Berita</a>
+                    <span class="separator">/</span>
+                    <span class="current">Biografi Tokoh NU</span>
+                </div>
+                <div class="d-flex flex-wrap align-items-center">
+                    <span class="bio-meta-item"><i class="far fa-eye"></i> Feature Story</span>
+                    <span class="bio-meta-item"><i class="far fa-clock"></i> 7 Menit Baca</span>
+                    <span class="bio-meta-item"><i class="fas fa-map-marker-alt"></i> Papasan, Bangsri</span>
+                    <button class="btn btn-sm btn-outline-success ms-lg-2" onclick="window.print()" title="Cetak / Simpan Halaman">
+                        <i class="fas fa-print me-1"></i> Cetak Halaman
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <section class="section-padding" id="kisah-lengkap">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- ARTICLE CONTENT -->
+                <div class="col-lg-8" data-aos="fade-up">
+
+                    <!-- NARRATOR / TEXT-TO-SPEECH BOX -->
+                    <div class="audio-narrator-box">
+                        <div class="audio-narrator-info">
+                            <button id="btnPlaySpeech" class="audio-narrator-btn" title="Dengarkan Narasi Artikel">
+                                <i class="fas fa-volume-up" id="speechIcon"></i>
+                            </button>
+                            <div>
+                                <strong class="d-block" style="font-size:0.95rem;color:var(--text-dark);">Dengarkan Narasi Biografi</strong>
+                                <span class="text-muted small" id="speechStatus">Klik untuk mendengarkan artikel dibacakan otomatis</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="badge bg-light text-dark border">
+                                <i class="fas fa-headphones me-1 text-success"></i> Audio Assist
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- PDF DOWNLOAD CARD -->
+                    <div class="pdf-download-card" style="display:flex;align-items:center;gap:15px;background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:1px solid #bbf7d0;border-radius:var(--radius-lg);padding:20px;margin-bottom:35px;box-shadow:var(--shadow-sm);">
+                        <div style="width:48px;height:48px;background:linear-gradient(135deg,#16a34a,#15803d);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:22px;flex-shrink:0;">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="pdf-info" style="flex:1;">
+                            <strong style="color:#14532d;font-size:1rem;">Naskah Asli PDF Feature Biografi</strong>
+                            <p style="margin:2px 0 0;font-size:0.85rem;color:#166534;">
+                                Dokumen asli penelusuran sejarah mahasiswa KKN UNISNU Jepara bersama narasumber Bapak Solekan, M.Pd.I.
+                            </p>
+                        </div>
+                        <a href="FUTURE%20BIOGRAFI%20TOKOH%20NU%20KKN%20DESA%20PAPASAN.pdf" download class="btn btn-success" style="background:#16a34a;border:none;padding:8px 18px;border-radius:var(--radius-pill);font-weight:600;white-space:nowrap;">
+                            <i class="fas fa-download me-1"></i> Unduh PDF
+                        </a>
+                    </div>
+
+                    <!-- ARTICLE BODY -->
+                    <article id="article-content" class="bio-article-body">
+
+                        <!-- BAB 1 -->
+                        <div id="bab-kepergian">
+                            <h2 class="bio-chapter-title">
+                                <i class="fas fa-feather-alt text-success"></i>
+                                Berpulangnya Sang Perintis &amp; Sosok yang Membumi
+                            </h2>
+
+                            <p class="bio-dropcap">
+                                <strong>PAPASAN</strong> — Perintis pendidikan dan organisasi Nahdlatul Ulama (NU) di Desa Papasan, <strong>Bapak Abdul Karim</strong>, tutup usia pada hari <strong>Rabu Pahing, 28 Oktober 2020</strong>, bertepatan dengan tanggal <strong>11 Rabiul Awal 1442 Hijriah</strong>. Pak Dul, sapaan akrab almarhum Bapak Abdul Karim, lahir pada 26 April 1965 dan dimakamkan di kompleks makam keluarga Bani Basyir, Papasan RT 05 RW 02, tepat di belakang MI NU Papasan, dekat dengan Masjid Al-Mubasyir.
+                            </p>
+
+                            <p>
+                                Kabar wafatnya menjadi kehilangan teramat besar bagi warga Papasan, khususnya bagi keluarga besar Nahdlatul Ulama yang selama puluhan tahun dibina langsung oleh almarhum bersama rekan seperjuangannya, <strong>Bapak Solehan</strong> (Bapak Solekan, M.Pd.I).
+                            </p>
+
+                            <p>
+                                Bapak Solehan, yang juga menjabat Tanfidziyah mendampingi almarhum sebagai Suriyah, mengenang Pak Dul sebagai sosok yang tekun namun tetap membumi. <em>&ldquo;Dari muslimatan ke muslimatan sering jalan bareng, terus setelah ada kendaraan ya sering berangkat bareng juga,&rdquo;</em> kenang Bapak Solehan.
+                            </p>
+
+                            <div class="bio-callout">
+                                <div class="bio-callout-quote">
+                                    &ldquo;Enggak banyak pesan dari beliau karena beliau memang enggak banyak wasiat, tapi beliau banyak mengajak mengembangkan Islam.&rdquo;
+                                </div>
+                                <div class="bio-callout-author">
+                                    — Bapak Solekan, M.Pd.I (Rekan Seperjuangan &amp; Tokoh Tanfidziyah NU Papasan)
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BAB 2 -->
+                        <div id="bab-akar-sejarah">
+                            <h2 class="bio-chapter-title">
+                                <i class="fas fa-drum text-success"></i>
+                                Merintis NU dari Akar Rumput: Dari Terbang Jidor Mbah Basyir hingga Tradisi &ldquo;Gandul&rdquo;
+                            </h2>
+
+                            <p>
+                                Nama Bapak Abdul Karim tidak bisa dilepaskan dari sejarah masuknya NU secara kelembagaan di Papasan. Sebelum era Pak Dul, ajaran NU sebenarnya sudah lebih dulu diperkenalkan oleh <strong>Mbah Basyir</strong>, tokoh asal Banjaran yang menetap di Papasan dan menyebarkan Islam lewat kesenian <strong>terbang jidor</strong>, hingga berhasil mengumpulkan bapak-bapak setempat dan mengajarkan mereka salat. Namun saat itu NU masih sebatas kegiatan kelompok kecil, belum menjadi identitas keagamaan yang dikenal luas oleh masyarakat.
+                            </p>
+
+                            <p>
+                                Kedekatan Pak Dul dengan Bapak Solehan sendiri sudah terjalin sejak masa sekolah. Selama tiga tahun, keduanya rutin jalan kaki bersama dari Papasan menuju sekolah di Bangsri, sebab saat itu transportasi belum tersedia.
+                            </p>
+
+                            <p>
+                                Sesekali mereka menumpang mobil pick up yang warga sekitar biasa menyebutnya tradisi <em>&ldquo;gandul&rdquo;</em>. Rumah Pak Dul sendiri berada di <strong>Dukuh Gimbal, Desa Papasan</strong>, dan tak jarang keduanya belajar bersama secara bergantian, baik di rumah Pak Dul, rumah Bapak Solehan, atau rumah teman lainnya.
+                            </p>
+                        </div>
+
+                        <!-- BAB 3 -->
+                        <div id="bab-kelembagaan-pendidikan">
+                            <h2 class="bio-chapter-title">
+                                <i class="fas fa-school text-success"></i>
+                                Meletakkan Fondasi Kelembagaan NU &amp; Pendidikan Islam (1985–2014)
+                            </h2>
+
+                            <p>
+                                Barulah pada <strong>1985</strong>, keduanya mulai merintis kegiatan keagamaan yang lebih terorganisasi, dimulai dari muslimatan hingga struktur organisasi NU. Bapak Solehan sendiri yang lebih dulu merintis kegiatan ini, sebelum akhirnya Pak Dul ikut bergabung dan mereka berjuang bersama-sama.
+                            </p>
+
+                            <p>
+                                Setiap harinya mereka bahkan membuat jadwal keliling untuk mengisi muslimatan dari satu kelompok ke kelompok lain di Papasan.
+                            </p>
+
+                            <div class="row g-3 my-3">
+                                <div class="col-md-4">
+                                    <div class="card h-100 border-success" style="border-width:2px;border-radius:var(--radius);background:var(--bg-light);">
+                                        <div class="card-body text-center p-3">
+                                            <span class="badge bg-success mb-2">Tahun 1996</span>
+                                            <h5 class="fw-bold mb-1" style="font-size:1.05rem;">TK NU Papasan</h5>
+                                            <p class="small text-muted mb-0">Fondasi pendidikan prasekolah berkarakter Islami.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card h-100 border-success" style="border-width:2px;border-radius:var(--radius);background:var(--bg-light);">
+                                        <div class="card-body text-center p-3">
+                                            <span class="badge bg-success mb-2">Tahun 1996</span>
+                                            <h5 class="fw-bold mb-1" style="font-size:1.05rem;">MI NU Papasan</h5>
+                                            <p class="small text-muted mb-0">Madrasah Ibtidaiyah pencetak tunas bangsa berakhlak mulia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card h-100 border-success" style="border-width:2px;border-radius:var(--radius);background:var(--bg-light);">
+                                        <div class="card-body text-center p-3">
+                                            <span class="badge bg-success mb-2">Tahun 2014</span>
+                                            <h5 class="fw-bold mb-1" style="font-size:1.05rem;">MTs NU Papasan</h5>
+                                            <p class="small text-muted mb-0">Pendidikan tingkat lanjutan di bawah <strong>Yayasan Aswaja</strong>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>
+                                Di bidang pendidikan, Pak Dul dan Bapak Solehan merintis <strong>TK NU Papasan</strong> dan <strong>MI NU Papasan</strong> pada 1996, disusul <strong>MTs NU Papasan</strong> pada 2014. Ketiga lembaga tersebut bernaung di bawah satu yayasan bernama <strong>Yayasan Aswaja</strong>.
+                            </p>
+
+                            <p>
+                                Dalam struktur organisasi, Pak Dul menjabat sebagai <strong>Suriyah</strong>, sementara Bapak Solehan mengisi posisi <strong>Tanfidziyah</strong>.
+                            </p>
+                        </div>
+
+                        <!-- BAB 4 -->
+                        <div id="bab-pendidikan-keilmuan">
+                            <h2 class="bio-chapter-title">
+                                <i class="fas fa-graduation-cap text-success"></i>
+                                Riwayat Pendidikan, Wisuda INISNU, &amp; Sanad Tarekat Naqsyabandiyah
+                            </h2>
+
+                            <p>
+                                Riwayat pendidikan Pak Dul sendiri dimulai dari SD Papasan, dilanjutkan MTs Bangsri, lalu mondok di <strong>Pesantren Darun Musyawarah, Klumpang, Bangsri</strong>, sebelum sempat berpindah ke Pati. Sepulang dari Pati, ia sempat mengajar di madrasah bersama Bapak Solehan.
+                            </p>
+
+                            <p>
+                                Karena selepas MTs langsung mondok, ijazah setingkat MA-nya ditempuh lewat program <strong>Paket C</strong>, sebelum akhirnya menyelesaikan S1 di <strong>UNISNU yang sebelumnya bernama INISNU Jepara</strong> lewat kelas jauh Bangsri, kampus Hasyim Asy'ari, dan memenuhi seluruh syarat administrasi pendidikan yang diperlukan.
+                            </p>
+
+                            <div class="card p-3 my-4" style="background:var(--bg-cream);border:1px solid var(--accent);border-radius:var(--radius);">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div style="font-size:2rem;color:var(--accent-dark);"><i class="fas fa-quran"></i></div>
+                                    <div>
+                                        <h5 class="fw-bold mb-1" style="color:var(--primary-dark);">Spesialisasi Keilmuan &amp; Sanad Tarekat</h5>
+                                        <p class="small mb-0 text-muted">
+                                            Dalam bidang keilmuan, Pak Dul dikenal mendalami <strong>fiqih dan tasawuf</strong>, serta mengikuti <strong>Tarekat Naqsyabandiyah</strong> dengan sanad dari <strong>Mbah Nur Rahmat, Kajen, Pati</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BAB 5 -->
+                        <div id="bab-dakwah-kultural">
+                            <h2 class="bio-chapter-title">
+                                <i class="fas fa-heart text-success"></i>
+                                Dakwah Kultural yang Bijak: Merangkul Tradisi Lokal
+                            </h2>
+
+                            <p>
+                                Dalam berdakwah, Pak Dul dikenal tidak menempuh jalan yang keras dalam menyikapi tradisi lokal. Baginya, masyarakat Papasan adalah orang Jawa tulen yang budayanya tidak boleh serta-merta dihilangkan, sehingga ia memilih ikut mempelajari budaya tersebut lebih dulu.
+                            </p>
+
+                            <div class="row g-3 my-3">
+                                <div class="col-md-6">
+                                    <div class="p-3 border rounded h-100" style="background:var(--white);border-left:4px solid #ef4444 !important;">
+                                        <h6 class="fw-bold text-danger mb-2"><i class="fas fa-history me-1"></i> Tradisi Lama</h6>
+                                        <ul class="small text-muted ps-3 mb-0">
+                                            <li class="mb-2"><strong>Selametan Jumat Wage:</strong> Semula dilakukan di perempatan jalan.</li>
+                                            <li><strong>Tradisi Ruwahan:</strong> Digelar besar-besaran di tiap rumah pribadi.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-3 border rounded h-100" style="background:var(--white);border-left:4px solid #16a34a !important;">
+                                        <h6 class="fw-bold text-success mb-2"><i class="fas fa-check-circle me-1"></i> Pendekatan Bijak Pak Dul</h6>
+                                        <ul class="small text-muted ps-3 mb-0">
+                                            <li class="mb-2"><strong>Dipindah ke Tempat Ibadah:</strong> Pelan-pelan diarahkan ke masjid dan mushola.</li>
+                                            <li><strong>Arwahan Bersama:</strong> Diarahkan menjadi arwahan bersama secara terpadu dan rukun.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>
+                                Warga yang semula menentang sejumlah kegiatan NU pun akhirnya luluh dan turut serta, karena pendekatan Pak Dul yang mengikuti dulu kebiasaan masyarakat sebelum mengarahkannya secara bertahap.
+                            </p>
+                        </div>
+
+                        <!-- BAB 6 -->
+                        <div id="bab-ujian-dakwah">
+                            <h2 class="bio-chapter-title">
+                                <i class="fas fa-shield-alt text-success"></i>
+                                Menghadapi Tantangan, Jamaah Hizib, &amp; Keyakinan 40 Orang
+                            </h2>
+
+                            <p>
+                                Tak jarang keduanya juga menghadapi tantangan, salah satunya ketika materi khutbah soal salat dianggap menyinggung sebagian warga yang merasa pengetahuan agamanya masih dangkal, sampai ada yang menemui langsung khatib dan meminta agar tidak menyampaikan hal serupa lagi. Ada pula pengalaman menghadapi sikap warga yang di depan terlihat mendukung kegiatan pembangunan, namun di belakang malah sebaliknya.
+                            </p>
+
+                            <p>
+                                Sehari-hari, sosok Pak Dul yang <strong>humoris dan grapyak</strong> membuatnya mudah membaur dengan siapa saja, dari kalangan tua maupun muda.
+                            </p>
+
+                            <div class="bio-callout">
+                                <div class="bio-callout-quote">
+                                    &ldquo;Salah satu keyakinan yang dipegang Pak Dul bersama Bapak Solehan adalah bahwa di setiap kumpulan yang jumlahnya lebih dari 40 orang, kemungkinan besar ada sosok wali di antara mereka, sehingga doa yang dipanjatkan bersama diyakini lebih mustajab.&rdquo;
+                                </div>
+                                <div class="bio-callout-author">
+                                    — Prinsip Perjuangan Dakwah Pak Dul &amp; Bapak Solekan
+                                </div>
+                            </div>
+
+                            <p>
+                                Keyakinan itu pula yang mendasari mereka merintis <strong>jamaah hizib</strong> untuk menggempur kemaksiatan di Papasan, dan tanpa dukungan sarana yang memadai seperti sound system, upaya itu perlahan membuahkan hasil meski masih ada satu-dua warga yang sempat menentang.
+                            </p>
+                        </div>
+
+                        <!-- BAB 7 -->
+                        <div id="bab-warisan-estafet">
+                            <h2 class="bio-chapter-title">
+                                <i class="fas fa-hands-helping text-success"></i>
+                                Amaliyah yang Tetap Lestari &amp; Estafet Perjuangan Generasi Penerus
+                            </h2>
+
+                            <p>
+                                Sepeninggal Pak Dul, sejumlah kegiatan yang dirintisnya bersama Bapak Solehan tetap berjalan hingga sekarang, di antaranya:
+                            </p>
+
+                            <!-- AMALIYAH GRID -->
+                            <div class="amaliyah-grid">
+                                <div class="amaliyah-card">
+                                    <div class="amaliyah-time"><i class="far fa-clock me-1"></i> Rutin Bergilir</div>
+                                    <div class="amaliyah-name">Kumpulan Muslimatan</div>
+                                    <p class="amaliyah-detail">Pengajian bergilir dari kelompok ke kelompok se-Desa Papasan.</p>
+                                </div>
+                                <div class="amaliyah-card">
+                                    <div class="amaliyah-time"><i class="far fa-calendar-alt me-1"></i> Malam Selasa</div>
+                                    <div class="amaliyah-name">Burdahan Malam Selasa</div>
+                                    <p class="amaliyah-detail">Pembacaan shalawat Burdah memohon syafaat dan ketenteraman.</p>
+                                </div>
+                                <div class="amaliyah-card">
+                                    <div class="amaliyah-time"><i class="far fa-calendar-alt me-1"></i> Malam Rabu</div>
+                                    <div class="amaliyah-name">Tahlilan Malam Rabu</div>
+                                    <p class="amaliyah-detail">Majelis dzikir dan doa bersama untuk para sesepuh dan keluarga.</p>
+                                </div>
+                                <div class="amaliyah-card">
+                                    <div class="amaliyah-time"><i class="far fa-calendar-check me-1"></i> Jumat Wage</div>
+                                    <div class="amaliyah-name">Istighasah Rutin Jumat Wage</div>
+                                    <p class="amaliyah-detail">Istighasah rutin yang telah berjalan konsisten sekitar empat tahun lebih.</p>
+                                </div>
+                                <div class="amaliyah-card">
+                                    <div class="amaliyah-time"><i class="fas fa-moon me-1"></i> Malam Jumat Pahing</div>
+                                    <div class="amaliyah-name">Rijalul Ansor &amp; Pengajian</div>
+                                    <p class="amaliyah-detail">Pertemuan malam Jumat Pahing dilanjutkan mengaji Al-Qur'an dan pengajian esok harinya.</p>
+                                </div>
+                            </div>
+
+                            <p>
+                                Perjuangan Pak Dul juga dilanjutkan oleh putra-putra beliau, selain Bapak Solehan sendiri, serta sejumlah kader seperti <strong>Bapak Daim, Bapak Munawar, Bapak H. Suyatno, dan Bapak Suroso</strong>, yang kini menjadi pengurus di kelompok masing-masing.
+                            </p>
+
+                            <p>
+                                Menurut Bapak Solehan, antusiasme warga terlihat jelas setiap malam Jumat Pahing, di mana semua kelompok bisa hadir bersama, dan hal ini menjadi kebanggaan tersendiri karena sudah banyak yang ikut mengembangkan NU di Papasan.
+                            </p>
+
+                            <p>
+                                Organisasi-organisasi seperti <strong>IPNU-IPPNU, Muslimat, Fatayat, dan Ansor</strong> pun terus berkembang hingga saat ini, sesuatu yang menurut Bapak Solehan akan membuat Pak Dul bangga jika masih menyaksikannya.
+                            </p>
+
+                            <div class="p-4 my-4 rounded" style="background:var(--bg-light);border:1px solid var(--border);">
+                                <h5 class="fw-bold" style="color:var(--primary);"><i class="fas fa-tasks me-2"></i> Pekerjaan Rumah Kita Bersama</h5>
+                                <p class="mb-0" style="font-size:0.95rem;color:var(--text-body);">
+                                    Namun, menurut Bapak Solehan, satu hal yang masih menjadi pekerjaan rumah adalah <strong>penanaman moral masyarakat</strong>, yang dirasa masih kurang dan perlu terus dibenahi seiring pengaruh zaman yang semakin berkembang.
+                                </p>
+                            </div>
+
+                            <div class="text-center py-4 my-4" style="border-top:2px dashed var(--border);border-bottom:2px dashed var(--border);">
+                                <h4 class="font-heading fw-bold" style="color:var(--primary-dark);letter-spacing:0.5px;">
+                                    &ldquo;Selamat jalan Pak Dul, perjuanganmu merintis NU dan pendidikan Islam di Papasan akan terus dikenang dan diteruskan.&rdquo;
+                                </h4>
+                            </div>
+                        </div>
+
+                        <!-- TIMELINE PERJUANGAN -->
+                        <div class="my-5" id="garis-waktu">
+                            <h3 class="fw-bold mb-4" style="font-family:var(--font-heading);color:var(--primary-dark);">
+                                <i class="fas fa-stream me-2 text-gold"></i> Garis Waktu Jejak Pengabdian
+                            </h3>
+                            <div class="bio-timeline">
+                                <div class="bio-timeline-item" data-aos="fade-up">
+                                    <div class="bio-timeline-dot"></div>
+                                    <span class="bio-timeline-year">26 April 1965</span>
+                                    <h4 class="bio-timeline-title">Lahirnya Sang Perintis</h4>
+                                    <p class="bio-timeline-desc">Bapak Abdul Karim (Pak Dul) lahir di Desa Papasan, kelak bermukim di Dukuh Gimbal dan mendedikasikan hidupnya bagi umat.</p>
+                                </div>
+                                <div class="bio-timeline-item" data-aos="fade-up">
+                                    <div class="bio-timeline-dot"></div>
+                                    <span class="bio-timeline-year">Masa Belajar</span>
+                                    <h4 class="bio-timeline-title">Jalan Kaki &amp; Tradisi &ldquo;Gandul&rdquo;</h4>
+                                    <p class="bio-timeline-desc">Rutin berjalan kaki Papasan–Bangsri bersama Bapak Solekan selama 3 tahun masa sekolah serta nyantri di Klumpang dan Pati.</p>
+                                </div>
+                                <div class="bio-timeline-item" data-aos="fade-up">
+                                    <div class="bio-timeline-dot"></div>
+                                    <span class="bio-timeline-year">Tahun 1985</span>
+                                    <h4 class="bio-timeline-title">Merintis Organisasi NU &amp; Muslimatan Keliling</h4>
+                                    <p class="bio-timeline-desc">Memulai kegiatan keagamaan terorganisasi, membuat jadwal harian mengisi muslimatan keliling dan membentuk struktur NU.</p>
+                                </div>
+                                <div class="bio-timeline-item" data-aos="fade-up">
+                                    <div class="bio-timeline-dot"></div>
+                                    <span class="bio-timeline-year">Tahun 1996</span>
+                                    <h4 class="bio-timeline-title">Mendirikan TK NU &amp; MI NU Papasan</h4>
+                                    <p class="bio-timeline-desc">Merintis institusi taman kanak-kanak dan madrasah ibtidaiyah sebagai tonggak awal kebangkitan pendidikan Islam formal di desa.</p>
+                                </div>
+                                <div class="bio-timeline-item" data-aos="fade-up">
+                                    <div class="bio-timeline-dot"></div>
+                                    <span class="bio-timeline-year">Tahun 2014</span>
+                                    <h4 class="bio-timeline-title">Mendirikan MTs NU Papasan</h4>
+                                    <p class="bio-timeline-desc">Menghadirkan madrasah tsanawiyah lanjutan di bawah naungan <strong>Yayasan Aswaja</strong>.</p>
+                                </div>
+                                <div class="bio-timeline-item" data-aos="fade-up">
+                                    <div class="bio-timeline-dot"></div>
+                                    <span class="bio-timeline-year">28 Oktober 2020</span>
+                                    <h4 class="bio-timeline-title">Tutup Usia (11 Rabiul Awal 1442 H)</h4>
+                                    <p class="bio-timeline-desc">Berpulang pada hari Rabu Pahing menjelang Maulid Nabi Muhammad SAW. Dimakamkan di kompleks makam Bani Basyir RT 05 RW 02 Papasan dekat Masjid Al-Mubasyir.</p>
+                                </div>
+                                <div class="bio-timeline-item" data-aos="fade-up">
+                                    <div class="bio-timeline-dot"></div>
+                                    <span class="bio-timeline-year">Masa Kini</span>
+                                    <h4 class="bio-timeline-title">Amaliyah Lestari &amp; Berkembangnya Banom NU</h4>
+                                    <p class="bio-timeline-desc">Amaliyah tahlilan, istighasah, burdahan, dan rijalul ansor tetap semarak diiringi berkembangnya IPNU, IPPNU, Fatayat, Muslimat, dan Ansor.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- GALERI FOTO DAN DOKUMENTASI LENGKAP -->
+                        <div class="my-5" id="galeri-dokumentasi">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <h3 class="fw-bold mb-1" style="font-family:var(--font-heading);color:var(--primary-dark);">
+                                        <i class="fas fa-camera-retro me-2 text-gold"></i> Lampiran Dokumen Pendukung Biografi Tokoh NU
+                                    </h3>
+                                    <p class="text-muted small mb-0">Klik pada foto untuk melihat dokumen asli dalam resolusi penuh (Fancybox Lightbox).</p>
+                                </div>
+                            </div>
+
+                            <div class="bio-gallery-grid">
+
+                                <!-- Foto 1: Profil Almarhum -->
+                                <div class="bio-gallery-item" data-aos="fade-up">
+                                    <a href="img/tokoh-nu/pak-dul-profil.jpg" data-fancybox="bio-gallery" data-caption="Potret Almarhum Bapak Abdul Karim (Pak Dul) — Perintis NU &amp; Pendidikan Islam di Papasan">
+                                        <img src="img/tokoh-nu/pak-dul-profil.jpg" alt="Foto Almarhum Pak Dul" class="bio-gallery-thumb">
+                                        <div class="bio-gallery-badge"><i class="fas fa-search-plus"></i></div>
+                                    </a>
+                                    <div class="bio-gallery-caption">
+                                        <i class="fas fa-user me-1 text-success"></i> <strong>Foto Profil Almarhum Pak Dul</strong><br>
+                                        <span class="text-muted small">Suriyah NU &amp; Pendiri Madrasah Papasan</span>
+                                    </div>
+                                </div>
+
+                                <!-- Foto 2: Koleksi Kitab 1 -->
+                                <div class="bio-gallery-item" data-aos="fade-up" data-aos-delay="100">
+                                    <a href="img/tokoh-nu/koleksi-kitab-1.jpg" data-fancybox="bio-gallery" data-caption="Dokumentasi Koleksi Kitab Almarhum — Kitab Kuning Fiqih &amp; Tasawuf">
+                                        <img src="img/tokoh-nu/koleksi-kitab-1.jpg" alt="Dokumentasi Koleksi Kitab Almarhum" class="bio-gallery-thumb">
+                                        <div class="bio-gallery-badge"><i class="fas fa-search-plus"></i></div>
+                                    </a>
+                                    <div class="bio-gallery-caption">
+                                        <i class="fas fa-book me-1 text-success"></i> <strong>Dokumentasi Koleksi Kitab Almarhum (1)</strong><br>
+                                        <span class="text-muted small">Koleksi kitab fiqih dan tasawuf</span>
+                                    </div>
+                                </div>
+
+                                <!-- Foto 3: Koleksi Kitab 2 -->
+                                <div class="bio-gallery-item" data-aos="fade-up" data-aos-delay="200">
+                                    <a href="img/tokoh-nu/koleksi-kitab-2.jpg" data-fancybox="bio-gallery" data-caption="Dokumentasi Koleksi Kitab Almarhum — Bagian 2">
+                                        <img src="img/tokoh-nu/koleksi-kitab-2.jpg" alt="Koleksi Kitab Almarhum 2" class="bio-gallery-thumb">
+                                        <div class="bio-gallery-badge"><i class="fas fa-search-plus"></i></div>
+                                    </a>
+                                    <div class="bio-gallery-caption">
+                                        <i class="fas fa-book-open me-1 text-success"></i> <strong>Dokumentasi Koleksi Kitab Almarhum (2)</strong><br>
+                                        <span class="text-muted small">Warisan literatur keilmuan pesantren</span>
+                                    </div>
+                                </div>
+
+                                <!-- Foto 4: Lokasi Makam -->
+                                <div class="bio-gallery-item" data-aos="fade-up">
+                                    <a href="img/tokoh-nu/lokasi-makam.jpg" data-fancybox="bio-gallery" data-caption="Dokumentasi Lokasi Makam Almarhum di Kompleks Bani Basyir RT 05 RW 02 Papasan (Belakang MI NU Papasan)">
+                                        <img src="img/tokoh-nu/lokasi-makam.jpg" alt="Dokumentasi Lokasi Makam Almarhum" class="bio-gallery-thumb">
+                                        <div class="bio-gallery-badge"><i class="fas fa-search-plus"></i></div>
+                                    </a>
+                                    <div class="bio-gallery-caption">
+                                        <i class="fas fa-monument me-1 text-success"></i> <strong>Dokumentasi Lokasi Makam Almarhum</strong><br>
+                                        <span class="text-muted small">Kompleks Bani Basyir RT 5 RW 2 dekat Masjid</span>
+                                    </div>
+                                </div>
+
+                                <!-- Foto 5: Saat Ziarah -->
+                                <div class="bio-gallery-item" data-aos="fade-up" data-aos-delay="100">
+                                    <a href="img/tokoh-nu/ziarah-makam.jpg" data-fancybox="bio-gallery" data-caption="Dokumentasi Saat Ziarah ke Makam Almarhum">
+                                        <img src="img/tokoh-nu/ziarah-makam.jpg" alt="Dokumentasi Saat Ziarah" class="bio-gallery-thumb">
+                                        <div class="bio-gallery-badge"><i class="fas fa-search-plus"></i></div>
+                                    </a>
+                                    <div class="bio-gallery-caption">
+                                        <i class="fas fa-pray me-1 text-success"></i> <strong>Dokumentasi Saat Ziarah</strong><br>
+                                        <span class="text-muted small">Ziarah dan doa di pusara almarhum</span>
+                                    </div>
+                                </div>
+
+                                <!-- Foto 6: Wisuda INISNU -->
+                                <div class="bio-gallery-item" data-aos="fade-up" data-aos-delay="200">
+                                    <a href="img/tokoh-nu/wisuda-inisnu.jpg" data-fancybox="bio-gallery" data-caption="Dokumentasi Almarhum Saat Wisuda INISNU (kini UNISNU) Jepara">
+                                        <img src="img/tokoh-nu/wisuda-inisnu.jpg" alt="Dokumentasi Almarhum Saat Wisuda INISNU" class="bio-gallery-thumb">
+                                        <div class="bio-gallery-badge"><i class="fas fa-search-plus"></i></div>
+                                    </a>
+                                    <div class="bio-gallery-caption">
+                                        <i class="fas fa-user-graduate me-1 text-success"></i> <strong>Dokumentasi Almarhum Saat Wisuda INISNU</strong><br>
+                                        <span class="text-muted small">Kelulusan S1 INISNU Kampus Bangsri</span>
+                                    </div>
+                                </div>
+
+                                <!-- Foto 7: Bersama Keluarga -->
+                                <div class="bio-gallery-item" data-aos="fade-up">
+                                    <a href="img/tokoh-nu/foto-keluarga.jpg" data-fancybox="bio-gallery" data-caption="Dokumentasi Almarhum dengan Keluarga Tercinta">
+                                        <img src="img/tokoh-nu/foto-keluarga.jpg" alt="Dokumentasi Almarhum dengan Keluarga" class="bio-gallery-thumb">
+                                        <div class="bio-gallery-badge"><i class="fas fa-search-plus"></i></div>
+                                    </a>
+                                    <div class="bio-gallery-caption">
+                                        <i class="fas fa-users me-1 text-success"></i> <strong>Dokumentasi Almarhum dengan Keluarga</strong><br>
+                                        <span class="text-muted small">Momen kehangatan keluarga almarhum</span>
+                                    </div>
+                                </div>
+
+                                <!-- Foto 8: Wawancara Solekan -->
+                                <div class="bio-gallery-item" data-aos="fade-up" data-aos-delay="100">
+                                    <a href="img/tokoh-nu/wawancara-solekan.jpg" data-fancybox="bio-gallery" data-caption="Dokumentasi Proses Wawancara dengan Bapak Solekan, M.Pd.I">
+                                        <img src="img/tokoh-nu/wawancara-solekan.jpg" alt="Dokumentasi Proses Wawancara dengan Bapak Solekan" class="bio-gallery-thumb">
+                                        <div class="bio-gallery-badge"><i class="fas fa-search-plus"></i></div>
+                                    </a>
+                                    <div class="bio-gallery-caption">
+                                        <i class="fas fa-comments me-1 text-success"></i> <strong>Dokumentasi Wawancara dengan Bapak Solekan, M.Pd.I</strong><br>
+                                        <span class="text-muted small">Penelusuran sejarah bersama narasumber utama</span>
+                                    </div>
+                                </div>
+
+                                <!-- Foto 9: Wawancara Istri -->
+                                <div class="bio-gallery-item" data-aos="fade-up" data-aos-delay="200">
+                                    <a href="img/tokoh-nu/wawancara-istri.jpg" data-fancybox="bio-gallery" data-caption="Dokumentasi Setelah Wawancara dengan Bapak Solekan, M.Pd.I dan Istri Almarhum">
+                                        <img src="img/tokoh-nu/wawancara-istri.jpg" alt="Dokumentasi Setelah Wawancara dengan Istri Almarhum" class="bio-gallery-thumb">
+                                        <div class="bio-gallery-badge"><i class="fas fa-search-plus"></i></div>
+                                    </a>
+                                    <div class="bio-gallery-caption">
+                                        <i class="fas fa-handshake me-1 text-success"></i> <strong>Bersama Bapak Solekan, M.Pd.I &amp; Istri Almarhum</strong><br>
+                                        <span class="text-muted small">Dokumentasi pasca wawancara tim KKN</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- TAGS -->
+                        <div class="mt-5 pt-3 d-flex flex-wrap gap-2" style="border-top:1px solid var(--border);">
+                            <span class="badge" style="background:var(--bg-light);color:var(--text-body);padding:7px 16px;border-radius:var(--radius-pill);font-weight:600;font-size:0.85rem;">#BiografiTokoh</span>
+                            <span class="badge" style="background:var(--bg-light);color:var(--text-body);padding:7px 16px;border-radius:var(--radius-pill);font-weight:600;font-size:0.85rem;">#NUPapasan</span>
+                            <span class="badge" style="background:var(--bg-light);color:var(--text-body);padding:7px 16px;border-radius:var(--radius-pill);font-weight:600;font-size:0.85rem;">#PendidikanIslam</span>
+                            <span class="badge" style="background:var(--bg-light);color:var(--text-body);padding:7px 16px;border-radius:var(--radius-pill);font-weight:600;font-size:0.85rem;">#YayasanAswaja</span>
+                            <span class="badge" style="background:var(--bg-light);color:var(--text-body);padding:7px 16px;border-radius:var(--radius-pill);font-weight:600;font-size:0.85rem;">#DesaPapasan</span>
+                            <span class="badge" style="background:var(--bg-light);color:var(--text-body);padding:7px 16px;border-radius:var(--radius-pill);font-weight:600;font-size:0.85rem;">#KKNUNISNU</span>
+                        </div>
+
+                        <!-- SHARE BUTTONS -->
+                        <div class="mt-4 pt-4" style="border-top:1px solid var(--border);">
+                            <h5 class="font-body fw-bold mb-3" style="font-size:0.95rem;">Bagikan Biografi Inspiratif Ini:</h5>
+                            <div class="share-buttons">
+                                <button class="share-btn whatsapp" data-share="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></button>
+                                <button class="share-btn facebook" data-share="facebook" title="Facebook"><i class="fab fa-facebook-f"></i></button>
+                                <button class="share-btn twitter" data-share="twitter" title="Twitter / X"><i class="fab fa-x-twitter"></i></button>
+                                <button class="share-btn copy-link" data-share="copy" title="Salin Tautan"><i class="fas fa-link"></i></button>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+
+                <!-- SIDEBAR -->
+                <div class="col-lg-4">
+
+                    <!-- INFOBOX TOKOH -->
+                    <div class="infobox-tokoh" data-aos="fade-left">
+                        <div class="infobox-header">
+                            <h4>Profil Almarhum Pak Dul</h4>
+                            <p><i class="fas fa-certificate me-1"></i> Tokoh Perintis NU Papasan</p>
+                        </div>
+                        <div class="infobox-body">
+                            <div class="text-center mb-3">
+                                <a href="img/tokoh-nu/pak-dul-profil.jpg" data-fancybox="sidebar-portrait">
+                                    <img src="img/tokoh-nu/pak-dul-profil.jpg" alt="Foto Pak Dul" style="width:130px;height:160px;object-fit:cover;border-radius:var(--radius);border:2px solid var(--accent);box-shadow:var(--shadow-sm);">
+                                </a>
+                            </div>
+                            <div class="infobox-row">
+                                <div class="infobox-label">Nama Lengkap</div>
+                                <div class="infobox-value"><strong>Bapak Abdul Karim</strong></div>
+                            </div>
+                            <div class="infobox-row">
+                                <div class="infobox-label">Sapaan Akrab</div>
+                                <div class="infobox-value">Pak Dul</div>
+                            </div>
+                            <div class="infobox-row">
+                                <div class="infobox-label">Kelahiran</div>
+                                <div class="infobox-value">26 April 1965</div>
+                            </div>
+                            <div class="infobox-row">
+                                <div class="infobox-label">Wafat</div>
+                                <div class="infobox-value">Rabu Pahing, 28 Okt 2020<br><span class="text-muted small">(11 Rabiul Awal 1442 H)</span></div>
+                            </div>
+                            <div class="infobox-row">
+                                <div class="infobox-label">Peristirahatan</div>
+                                <div class="infobox-value">Makam Keluarga Bani Basyir, RT 05 RW 02 Papasan (Belakang MI NU)</div>
+                            </div>
+                            <div class="infobox-row">
+                                <div class="infobox-label">Amanah NU</div>
+                                <div class="infobox-value">Suriyah NU Papasan</div>
+                            </div>
+                            <div class="infobox-row">
+                                <div class="infobox-label">Rekan Juang</div>
+                                <div class="infobox-value">Bapak Solekan, M.Pd.I (Tanfidziyah)</div>
+                            </div>
+                            <div class="infobox-row">
+                                <div class="infobox-label">Lembaga Dirintis</div>
+                                <div class="infobox-value">TK NU (1996), MI NU (1996), MTs NU (2014) — Yayasan Aswaja</div>
+                            </div>
+                            <div class="infobox-row">
+                                <div class="infobox-label">Pendidikan</div>
+                                <div class="infobox-value">Ponpes Klumpang &amp; Pati, Paket C, S1 INISNU/UNISNU Jepara</div>
+                            </div>
+                            <div class="infobox-row">
+                                <div class="infobox-label">Sanad Tarekat</div>
+                                <div class="infobox-value">Naqsyabandiyah (Mbah Nur Rahmat, Kajen, Pati)</div>
+                            </div>
+                            <div class="infobox-row">
+                                <div class="infobox-label">Bidang Keilmuan</div>
+                                <div class="infobox-value">Fiqih &amp; Tasawuf</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- QUICK NAVIGATION / DAFTAR ISI -->
+                    <div class="bio-quick-nav d-none d-lg-block" data-aos="fade-left" data-aos-delay="100">
+                        <h5><i class="fas fa-list-ol text-success"></i> Daftar Bab Biografi</h5>
+                        <ul>
+                            <li><a href="#bab-kepergian"><i class="fas fa-angle-right"></i> 1. Berpulangnya Sang Perintis</a></li>
+                            <li><a href="#bab-akar-sejarah"><i class="fas fa-angle-right"></i> 2. Dari Jidor hingga "Gandul"</a></li>
+                            <li><a href="#bab-kelembagaan-pendidikan"><i class="fas fa-angle-right"></i> 3. Fondasi NU &amp; Madrasah</a></li>
+                            <li><a href="#bab-pendidikan-keilmuan"><i class="fas fa-angle-right"></i> 4. Pengembaraan &amp; Wisuda</a></li>
+                            <li><a href="#bab-dakwah-kultural"><i class="fas fa-angle-right"></i> 5. Merangkul Budaya Jawa</a></li>
+                            <li><a href="#bab-ujian-dakwah"><i class="fas fa-angle-right"></i> 6. Ujian &amp; Jamaah Hizib</a></li>
+                            <li><a href="#bab-warisan-estafet"><i class="fas fa-angle-right"></i> 7. Amaliyah &amp; Estafet Juang</a></li>
+                            <li><a href="#garis-waktu"><i class="fas fa-angle-right"></i> Garis Waktu Pengabdian</a></li>
+                            <li><a href="#galeri-dokumentasi"><i class="fas fa-angle-right"></i> Galeri Dokumentasi Foto</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- RELATED ACTIVITIES / BERITA KKN -->
+                    <div class="sidebar-widget" data-aos="fade-left" data-aos-delay="200">
+                        <h4><i class="fas fa-newspaper me-2"></i>Kegiatan Pendidikan KKN</h4>
+                        <div class="news-popular-item">
+                            <img src="img/Mts.jpeg" alt="MTs NU Papasan">
+                            <div>
+                                <h5><a href="berita-pencegahan-pernikahan-dini.html">Edukasi Siswa MTs NU Papasan: Jauhi Pernikahan Dini</a></h5>
+                                <span class="pop-date"><i class="far fa-calendar-alt me-1"></i> MTs NU Papasan</span>
+                            </div>
+                        </div>
+                        <div class="news-popular-item">
+                            <img src="img/mi.JPG" alt="MI NU Papasan">
+                            <div>
+                                <h5><a href="berita-edukasi-daur-ulang.html">Edukasi Pendidikan &amp; Daur Ulang di MI NU Papasan</a></h5>
+                                <span class="pop-date"><i class="far fa-calendar-alt me-1"></i> MI NU Papasan</span>
+                            </div>
+                        </div>
+                        <div class="news-popular-item">
+                            <img src="img/peltihan kopi.jpeg" alt="Pelatihan MTs NU">
+                            <div>
+                                <h5><a href="berita-pelatihan-kopi.html">Pelatihan Barista Siswa MTs NU Papasan</a></h5>
+                                <span class="pop-date"><i class="far fa-calendar-alt me-1"></i> Potensi Lokal</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BACK TO NEWS -->
+                    <div class="text-center mt-4">
+                        <a href="berita.html" class="btn btn-outline-success w-100 py-2" style="border-radius:var(--radius-pill);font-weight:600;">
+                            <i class="fas fa-arrow-left me-2"></i> Kembali ke Berita KKN
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6">
+                    <div class="footer-brand">
+                        <div
+                            style="width:45px;height:45px;background:linear-gradient(135deg,var(--primary-light),var(--accent));border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:20px;">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <span class="footer-brand-name">KKN Desa Papasan</span>
+                    </div>
+                    <p>Website resmi KKN Desa Papasan, Kecamatan Bangsri, Kabupaten Jepara, Provinsi Jawa Tengah. Mengabdi, memberdayakan masyarakat, dan mendokumentasikan kearifan sejarah lokal.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/kkndesapapasan2026/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Menu Navigasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html#beranda"><i class="fas fa-chevron-right"></i> Beranda</a></li>
+                        <li><a href="index.html#tentang"><i class="fas fa-chevron-right"></i> Tentang</a></li>
+                        <li><a href="index.html#program"><i class="fas fa-chevron-right"></i> Program Kerja</a></li>
+                        <li><a href="berita.html"><i class="fas fa-chevron-right"></i> Berita &amp; Kegiatan</a></li>
+                        <li><a href="biografi-tokoh-nu.html"><i class="fas fa-chevron-right"></i> Biografi Tokoh NU</a></li>
+                        <li><a href="galeri.html"><i class="fas fa-chevron-right"></i> Galeri Dokumentasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Kontak &amp; Lokasi</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Kantor Balai Desa Papasan, Kec. Bangsri, Kab. Jepara, Jawa Tengah</li>
+                        <li><i class="fas fa-envelope"></i> kkn.papasan.jepara@gmail.com</li>
+                        <li><i class="fas fa-globe"></i> Universitas Islam Nahdlatul Ulama (UNISNU) Jepara</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 Tim KKN Desa Papasan. All Rights Reserved. Dedikasi untuk Almarhum Bapak Abdul Karim (Pak Dul) dan Masyarakat Desa Papasan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // Initialize Fancybox
+        Fancybox.bind('[data-fancybox]', {
+            Toolbar: {
+                display: {
+                    left: ["infobar"],
+                    middle: ["zoomIn", "zoomOut", "toggle1to1", "rotateCCW", "rotateCW", "flipX", "flipY"],
+                    right: ["slideshow", "thumbs", "close"]
+                }
+            }
+        });
+
+        // Reading Progress Indicator
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            const progressBar = document.getElementById('readingProgress');
+            if (progressBar) {
+                progressBar.style.width = scrolled + '%';
+            }
+        });
+
+        // Text-to-Speech Narrator for Accessibility
+        const btnPlaySpeech = document.getElementById('btnPlaySpeech');
+        const speechIcon = document.getElementById('speechIcon');
+        const speechStatus = document.getElementById('speechStatus');
+        let isSpeaking = false;
+        let speechSynth = window.speechSynthesis;
+        let speechUtterance = null;
+
+        if (btnPlaySpeech && 'speechSynthesis' in window) {
+            btnPlaySpeech.addEventListener('click', () => {
+                if (isSpeaking) {
+                    speechSynth.cancel();
+                    isSpeaking = false;
+                    speechIcon.className = 'fas fa-volume-up';
+                    speechStatus.textContent = 'Klik untuk mendengarkan narasi artikel';
+                    btnPlaySpeech.style.background = 'var(--primary)';
+                } else {
+                    const articleText = document.getElementById('article-content').innerText;
+                    speechUtterance = new SpeechSynthesisUtterance(articleText);
+                    speechUtterance.lang = 'id-ID';
+                    speechUtterance.rate = 1.0;
+                    
+                    speechUtterance.onstart = () => {
+                        isSpeaking = true;
+                        speechIcon.className = 'fas fa-stop';
+                        speechStatus.textContent = 'Sedang membacakan narasi... Klik untuk berhenti';
+                        btnPlaySpeech.style.background = '#dc2626';
+                    };
+                    
+                    speechUtterance.onend = () => {
+                        isSpeaking = false;
+                        speechIcon.className = 'fas fa-volume-up';
+                        speechStatus.textContent = 'Pembacaan selesai. Klik untuk memutar kembali';
+                        btnPlaySpeech.style.background = 'var(--primary)';
+                    };
+
+                    speechUtterance.onerror = () => {
+                        isSpeaking = false;
+                        speechIcon.className = 'fas fa-volume-up';
+                        speechStatus.textContent = 'Audio tidak tersedia di perangkat ini.';
+                        btnPlaySpeech.style.background = 'var(--primary)';
+                    };
+
+                    speechSynth.speak(speechUtterance);
+                }
+            });
+        } else if (btnPlaySpeech) {
+            btnPlaySpeech.disabled = true;
+            speechStatus.textContent = 'Browser Anda belum mendukung text-to-speech otomatis.';
+        }
+    </script>
+</body>
+
+</html>
